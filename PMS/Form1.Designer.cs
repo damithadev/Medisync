@@ -28,62 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.pnl_sidebar = new System.Windows.Forms.Panel();
+            this.pnl_logo = new System.Windows.Forms.Panel();
+            this.pnl_top = new System.Windows.Forms.Panel();
+            this.pnl_body = new System.Windows.Forms.Panel();
+            this.pnl_sidebar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnl_sidebar
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(238, 663);
-            this.panel1.TabIndex = 0;
+            this.pnl_sidebar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pnl_sidebar.Controls.Add(this.pnl_logo);
+            this.pnl_sidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl_sidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnl_sidebar.Name = "pnl_sidebar";
+            this.pnl_sidebar.Size = new System.Drawing.Size(249, 663);
+            this.pnl_sidebar.TabIndex = 0;
             // 
-            // panel2
+            // pnl_logo
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(238, 124);
-            this.panel2.TabIndex = 1;
+            this.pnl_logo.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pnl_logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_logo.Location = new System.Drawing.Point(0, 0);
+            this.pnl_logo.Name = "pnl_logo";
+            this.pnl_logo.Size = new System.Drawing.Size(249, 143);
+            this.pnl_logo.TabIndex = 0;
             // 
-            // button1
+            // pnl_top
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(45, 148);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 47);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Patient";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pnl_top.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_top.Location = new System.Drawing.Point(249, 0);
+            this.pnl_top.Name = "pnl_top";
+            this.pnl_top.Size = new System.Drawing.Size(904, 43);
+            this.pnl_top.TabIndex = 1;
+            // 
+            // pnl_body
+            // 
+            this.pnl_body.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_body.Location = new System.Drawing.Point(249, 43);
+            this.pnl_body.Name = "pnl_body";
+            this.pnl_body.Size = new System.Drawing.Size(904, 620);
+            this.pnl_body.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 663);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_body);
+            this.Controls.Add(this.pnl_top);
+            this.Controls.Add(this.pnl_sidebar);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient Management System";
-            this.panel1.ResumeLayout(false);
+            this.pnl_sidebar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnl_sidebar;
+        private System.Windows.Forms.Panel pnl_logo;
+        private System.Windows.Forms.Panel pnl_top;
+        private System.Windows.Forms.Panel pnl_body;
     }
 }
 
