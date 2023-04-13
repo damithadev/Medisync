@@ -31,5 +31,30 @@ namespace PMS
         {
 
         }
+
+        private void btn_patients_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void SetMyButtonProperties()
+        {
+            // Assign an image to the button.
+            info.Image = Image.FromFile("C:\\Users\\HP\\Downloads\\info.png" ); 
+            // Align the image and text on the button.
+            info.ImageAlign = ContentAlignment.MiddleRight;
+            info.TextAlign = ContentAlignment.MiddleLeft;
+            // Give the button a flat appearance.
+            info.FlatStyle = FlatStyle.Flat;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
