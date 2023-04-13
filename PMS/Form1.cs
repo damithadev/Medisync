@@ -10,12 +10,40 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class Form1 : Form
+    public partial class frm_main : Form
     {
-        public Form1()
+        public frm_main()
         {
             InitializeComponent();
         }
+
+        private Form activeForm = null;
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null) 
+            { 
+                activeForm.Close(); 
+            }
+            
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnl_body.Controls.Add(childForm);
+            pnl_body.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+            
+
+
+
+
+
+
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -34,25 +62,29 @@ namespace PMS
 
         private void btn_patients_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new frm_patient());
         }
-        private void SetMyButtonProperties()
-        {
-            // Assign an image to the button.
-            info.Image = Image.FromFile("C:\\Users\\HP\\Downloads\\info.png" ); 
-            // Align the image and text on the button.
-            info.ImageAlign = ContentAlignment.MiddleRight;
-            info.TextAlign = ContentAlignment.MiddleLeft;
-            // Give the button a flat appearance.
-            info.FlatStyle = FlatStyle.Flat;
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_appontments_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_body_Paint(object sender, PaintEventArgs e)
         {
 
         }
