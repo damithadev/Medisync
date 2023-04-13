@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class frm_patient : Form
+    public partial class frm_perception : Form
     {
-        public frm_patient()
+        public frm_perception()
         {
             InitializeComponent();
-        }
-
-        private void frm_patient_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

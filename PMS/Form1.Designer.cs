@@ -193,6 +193,7 @@
             this.btn_perception.Text = "Prescriptions";
             this.btn_perception.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_perception.UseVisualStyleBackColor = true;
+            this.btn_perception.Click += new System.EventHandler(this.btn_perception_Click);
             // 
             // btn_appontments
             // 

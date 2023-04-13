@@ -81,12 +81,17 @@ namespace PMS
 
         private void btn_appontments_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new frm_appointment());
         }
 
         private void pnl_body_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_perception_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frm_perception());
         }
     }
 }

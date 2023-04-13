@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class frm_patient : Form
+    public partial class frm_appointment : Form
     {
-        public frm_patient()
+        public frm_appointment()
         {
             InitializeComponent();
         }
 
-        private void frm_patient_Load(object sender, EventArgs e)
+        private void frm_appointment_Load(object sender, EventArgs e)
         {
 
         }

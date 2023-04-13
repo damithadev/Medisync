@@ -52,19 +52,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_appointment.Designer.cs">
+      <DependentUpon>frm_appointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_patient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_patient.Designer.cs">
       <DependentUpon>frm_patient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_perception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_perception.Designer.cs">
+      <DependentUpon>frm_perception.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_appointment.resx">
+      <DependentUpon>frm_appointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_patient.resx">
       <DependentUpon>frm_patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_perception.resx">
+      <DependentUpon>frm_perception.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
