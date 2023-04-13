@@ -125,6 +125,7 @@
             this.btn_settings.Text = "Settings";
             this.btn_settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_settings.UseVisualStyleBackColor = true;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
             // pictureBox5
             // 
@@ -174,6 +175,7 @@
             this.btn_payments.Text = "Payments";
             this.btn_payments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_payments.UseVisualStyleBackColor = true;
+            this.btn_payments.Click += new System.EventHandler(this.btn_payments_Click);
             // 
             // btn_perception
             // 

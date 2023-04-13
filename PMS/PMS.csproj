@@ -64,11 +64,23 @@
     <Compile Include="frm_patient.Designer.cs">
       <DependentUpon>frm_patient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_payment.Designer.cs">
+      <DependentUpon>frm_payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_perception.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_perception.Designer.cs">
       <DependentUpon>frm_perception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_settings.Designer.cs">
+      <DependentUpon>frm_settings.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,8 +93,14 @@
     <EmbeddedResource Include="frm_patient.resx">
       <DependentUpon>frm_patient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_payment.resx">
+      <DependentUpon>frm_payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_perception.resx">
       <DependentUpon>frm_perception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings.resx">
+      <DependentUpon>frm_settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

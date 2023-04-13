@@ -93,5 +93,15 @@ namespace PMS
         {
             openChildForm(new frm_perception());
         }
+
+        private void btn_payments_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frm_payment());
+        }
+
+        private void btn_settings_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frm_settings());
+        }
     }
 }

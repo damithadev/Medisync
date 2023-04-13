@@ -1,6 +1,6 @@
 ﻿namespace PMS
 {
-    partial class frm_patient
+    partial class frm_payment
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // frm_patient
+            // frm_payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(1290, 587);
-            this.Name = "frm_patient";
-            this.Text = "frm_patient";
-            this.Load += new System.EventHandler(this.frm_patient_Load);
+            this.BackColor = System.Drawing.Color.Sienna;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "frm_payment";
+            this.Text = "frm_payment";
             this.ResumeLayout(false);
 
         }
