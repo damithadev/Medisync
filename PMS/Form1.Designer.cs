@@ -70,6 +70,7 @@
             // 
             // pnl_tabs
             // 
+            this.pnl_tabs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(108)))), ((int)(((byte)(236)))));
             this.pnl_tabs.Controls.Add(this.pictureBox3);
             this.pnl_tabs.Controls.Add(this.pictureBox6);
             this.pnl_tabs.Controls.Add(this.btn_settings);
@@ -276,7 +277,7 @@
             // 
             // pnl_top
             // 
-            this.pnl_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(140)))), ((int)(((byte)(228)))));
+            this.pnl_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(108)))), ((int)(((byte)(236)))));
             this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_top.Location = new System.Drawing.Point(288, 0);
             this.pnl_top.Name = "pnl_top";
