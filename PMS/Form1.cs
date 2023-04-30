@@ -103,5 +103,10 @@ namespace PMS
         {
             openChildForm(new frm_settings());
         }
+
+        private void pnl_tabs_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

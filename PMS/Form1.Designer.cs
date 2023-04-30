@@ -37,7 +37,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btn_payments = new System.Windows.Forms.Button();
+            this.btn_about = new System.Windows.Forms.Button();
             this.btn_perception = new System.Windows.Forms.Button();
             this.btn_appontments = new System.Windows.Forms.Button();
             this.btn_patients = new System.Windows.Forms.Button();
@@ -70,13 +70,14 @@
             // 
             // pnl_tabs
             // 
+            this.pnl_tabs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(108)))), ((int)(((byte)(236)))));
             this.pnl_tabs.Controls.Add(this.pictureBox3);
             this.pnl_tabs.Controls.Add(this.pictureBox6);
             this.pnl_tabs.Controls.Add(this.btn_settings);
             this.pnl_tabs.Controls.Add(this.pictureBox5);
             this.pnl_tabs.Controls.Add(this.pictureBox4);
             this.pnl_tabs.Controls.Add(this.pictureBox2);
-            this.pnl_tabs.Controls.Add(this.btn_payments);
+            this.pnl_tabs.Controls.Add(this.btn_about);
             this.pnl_tabs.Controls.Add(this.btn_perception);
             this.pnl_tabs.Controls.Add(this.btn_appontments);
             this.pnl_tabs.Controls.Add(this.btn_patients);
@@ -85,6 +86,7 @@
             this.pnl_tabs.Name = "pnl_tabs";
             this.pnl_tabs.Size = new System.Drawing.Size(288, 628);
             this.pnl_tabs.TabIndex = 1;
+            this.pnl_tabs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_tabs_Paint);
             // 
             // pictureBox3
             // 
@@ -157,25 +159,25 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // btn_payments
+            // btn_about
             // 
-            this.btn_payments.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_payments.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_payments.FlatAppearance.BorderSize = 0;
-            this.btn_payments.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_payments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_payments.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_payments.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_payments.Location = new System.Drawing.Point(0, 219);
-            this.btn_payments.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_payments.Name = "btn_payments";
-            this.btn_payments.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_payments.Size = new System.Drawing.Size(288, 73);
-            this.btn_payments.TabIndex = 3;
-            this.btn_payments.Text = "Payments";
-            this.btn_payments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_payments.UseVisualStyleBackColor = true;
-            this.btn_payments.Click += new System.EventHandler(this.btn_payments_Click);
+            this.btn_about.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_about.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_about.FlatAppearance.BorderSize = 0;
+            this.btn_about.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_about.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_about.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_about.Location = new System.Drawing.Point(0, 219);
+            this.btn_about.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_about.Name = "btn_about";
+            this.btn_about.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_about.Size = new System.Drawing.Size(288, 73);
+            this.btn_about.TabIndex = 3;
+            this.btn_about.Text = "About";
+            this.btn_about.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_about.UseVisualStyleBackColor = true;
+            this.btn_about.Click += new System.EventHandler(this.btn_payments_Click);
             // 
             // btn_perception
             // 
@@ -276,7 +278,7 @@
             // 
             // pnl_top
             // 
-            this.pnl_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(140)))), ((int)(((byte)(228)))));
+            this.pnl_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(108)))), ((int)(((byte)(236)))));
             this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_top.Location = new System.Drawing.Point(288, 0);
             this.pnl_top.Name = "pnl_top";
@@ -328,7 +330,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_tabs;
-        private System.Windows.Forms.Button btn_payments;
+        private System.Windows.Forms.Button btn_about;
         private System.Windows.Forms.Button btn_perception;
         private System.Windows.Forms.Button btn_appontments;
         private System.Windows.Forms.Button btn_patients;
