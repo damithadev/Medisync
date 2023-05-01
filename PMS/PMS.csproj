@@ -124,6 +124,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SignInScreen.resx">
+      <DependentUpon>SignInScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpScreen.resx">
       <DependentUpon>SignUpScreen.cs</DependentUpon>
     </EmbeddedResource>
