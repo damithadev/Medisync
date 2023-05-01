@@ -91,6 +91,12 @@
     <Compile Include="SignInScreen.Designer.cs">
       <DependentUpon>SignInScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="SignUpScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpScreen.Designer.cs">
+      <DependentUpon>SignUpScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
