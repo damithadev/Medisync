@@ -46,6 +46,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_top = new System.Windows.Forms.Panel();
             this.pnl_body = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pnl_sidebar.SuspendLayout();
             this.pnl_tabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,6 +56,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnl_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnl_body.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_sidebar
@@ -65,7 +68,7 @@
             this.pnl_sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_sidebar.Location = new System.Drawing.Point(0, 0);
             this.pnl_sidebar.Name = "pnl_sidebar";
-            this.pnl_sidebar.Size = new System.Drawing.Size(288, 771);
+            this.pnl_sidebar.Size = new System.Drawing.Size(288, 930);
             this.pnl_sidebar.TabIndex = 0;
             // 
             // pnl_tabs
@@ -84,7 +87,7 @@
             this.pnl_tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_tabs.Location = new System.Drawing.Point(0, 143);
             this.pnl_tabs.Name = "pnl_tabs";
-            this.pnl_tabs.Size = new System.Drawing.Size(288, 628);
+            this.pnl_tabs.Size = new System.Drawing.Size(288, 787);
             this.pnl_tabs.TabIndex = 1;
             this.pnl_tabs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_tabs_Paint);
             // 
@@ -282,25 +285,36 @@
             this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_top.Location = new System.Drawing.Point(288, 0);
             this.pnl_top.Name = "pnl_top";
-            this.pnl_top.Size = new System.Drawing.Size(899, 38);
+            this.pnl_top.Size = new System.Drawing.Size(1334, 38);
             this.pnl_top.TabIndex = 1;
             // 
             // pnl_body
             // 
             this.pnl_body.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.pnl_body.Controls.Add(this.pictureBox7);
             this.pnl_body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_body.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnl_body.Location = new System.Drawing.Point(288, 38);
             this.pnl_body.Name = "pnl_body";
-            this.pnl_body.Size = new System.Drawing.Size(899, 733);
+            this.pnl_body.Size = new System.Drawing.Size(1334, 892);
             this.pnl_body.TabIndex = 2;
             this.pnl_body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_body_Paint);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(1049, 20);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(230, 56);
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
             // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 771);
+            this.ClientSize = new System.Drawing.Size(1622, 930);
             this.Controls.Add(this.pnl_body);
             this.Controls.Add(this.pnl_top);
             this.Controls.Add(this.pnl_sidebar);
@@ -317,6 +331,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnl_logo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnl_body.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -340,6 +356,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button btn_settings;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
 
