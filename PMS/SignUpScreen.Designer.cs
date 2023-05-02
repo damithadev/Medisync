@@ -44,17 +44,17 @@
             // NIC
             // 
             this.NIC.AutoSize = true;
-            this.NIC.Location = new System.Drawing.Point(438, 147);
+            this.NIC.Location = new System.Drawing.Point(438, 259);
             this.NIC.Name = "NIC";
-            this.NIC.Size = new System.Drawing.Size(29, 16);
+            this.NIC.Size = new System.Drawing.Size(41, 16);
             this.NIC.TabIndex = 0;
-            this.NIC.Text = "NIC";
+            this.NIC.Text = "Email";
             this.NIC.Click += new System.EventHandler(this.label1_Click);
             // 
             // Lname
             // 
             this.Lname.AutoSize = true;
-            this.Lname.Location = new System.Drawing.Point(438, 259);
+            this.Lname.Location = new System.Drawing.Point(438, 208);
             this.Lname.Name = "Lname";
             this.Lname.Size = new System.Drawing.Size(72, 16);
             this.Lname.TabIndex = 1;
@@ -63,7 +63,7 @@
             // Fname
             // 
             this.Fname.AutoSize = true;
-            this.Fname.Location = new System.Drawing.Point(438, 202);
+            this.Fname.Location = new System.Drawing.Point(438, 153);
             this.Fname.Name = "Fname";
             this.Fname.Size = new System.Drawing.Size(72, 16);
             this.Fname.TabIndex = 2;

@@ -41,9 +41,9 @@
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.Location = new System.Drawing.Point(412, 164);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(113, 26);
+            this.username.Size = new System.Drawing.Size(68, 26);
             this.username.TabIndex = 0;
-            this.username.Text = "Username";
+            this.username.Text = "Email";
             // 
             // password
             // 
