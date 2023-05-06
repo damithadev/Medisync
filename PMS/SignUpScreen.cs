@@ -17,13 +17,14 @@ namespace PMS
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void signUpBtn_Click(object sender, EventArgs e)
         {
+            string fname = textBoxfname.Text;
+            string lname = textBoxlname.Text;
+            string email = textBoxemail.Text;
+            string password = textBoxpassword1.Text;
+
+
 
         }
     }
