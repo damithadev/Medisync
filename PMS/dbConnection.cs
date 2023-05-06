@@ -8,5 +8,6 @@ namespace PMS
 {
     internal class dbConnection
     {
+        public string connectionString = "server=139.59.62.182;port=3306;userid=damitha99;password=20020502;database=pms_db;sslmode=none;";
     }
 }
