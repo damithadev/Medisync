@@ -28,10 +28,14 @@ namespace PMS
 
             if (fname != "" && lname != "" && email != "" && password != "")
             {
+                if (textBoxpassword1.Text == textBoxpassword2.Text)
+                {
+
+                }
                  dbConnection functions = new dbConnection();
 
-                 if (UserTaken(email) == 0)
-                 {
+                if (UserTaken(email) == 0)
+                {
                     // Create MySqlConnection and MySqlCommand objects
                     using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
                     {
@@ -78,15 +82,15 @@ namespace PMS
                         }
                     }
 
-                 }
-                 else
-                 {
+                }
+                else
+                {
 
                     new PopupMessage("Sorry, This email already have an account!").ShowDialog();
                     //MessageBox.Show("Sorry, The username is already taken!");
                     textBoxemail.Text = "";
 
-
+                }
 
 
                     /* try
@@ -111,7 +115,7 @@ namespace PMS
                         textBoxpassword1.Text = "";
                         textBoxpassword2.Text = "";
                         }*/
-                }
+                 
             }
             else
             {
