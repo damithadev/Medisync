@@ -80,5 +80,10 @@ namespace PMS
                 MessageBox.Show("Enter all required information!");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
