@@ -19,7 +19,7 @@ namespace PMS
             InitializeComponent();
         }
 
-        private void signUpBtn_Click(object sender, EventArgs e)
+        public void signUpBtn_Click(object sender, EventArgs e)
         {
             string fname = textBoxfname.Text;
             string lname = textBoxlname.Text;
@@ -28,15 +28,68 @@ namespace PMS
 
             if (fname != "" && lname != "" && email != "" && password != "")
             {
-                dbConnection functions = new dbConnection();
+                 dbConnection functions = new dbConnection();
 
-               /* if (functions.checkUserTaken(email) == 0)
-                {
-                    new PopupMessage("Sorry, The username is already taken!").ShowDialog();
-                }
-                else
-                {*/
-                    try
+                 if (UserTaken(email) == 0)
+                 {
+                    // Create MySqlConnection and MySqlCommand objects
+                    using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
+                    {
+                        using (MySqlCommand command = connection.CreateCommand())
+                        {
+                            try
+                            {
+                                // Open the connection
+                                connection.Open();
+
+                                // Set the command text and parameters
+                                command.CommandText = "INSERT INTO userTable (fname, lname, email, password) VALUES (@fname, @lname, @email, @password)";
+                                command.Parameters.AddWithValue("@fname", fname);
+                                command.Parameters.AddWithValue("@lname", lname);
+                                command.Parameters.AddWithValue("@email", email);
+                                command.Parameters.AddWithValue("@password", password);
+
+                                // Execute the command
+                                int rowsAffected = command.ExecuteNonQuery();
+
+                                if (rowsAffected > 0)
+                                {
+                                    // Data successfully inserted
+                                    MessageBox.Show("Account registered successfully! Please use email and password to login..");
+                                }
+                                else
+                                {
+                                    // No rows affected
+                                    MessageBox.Show("Failed registering account!");
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Error registering account: " + ex.Message);
+                            }
+                            finally
+                            {
+                                textBoxfname.Text = "";
+                                textBoxlname.Text = "";
+                                textBoxemail.Text = "";
+                                textBoxpassword1.Text = "";
+                                textBoxpassword2.Text = "";
+                            }
+                        }
+                    }
+
+                 }
+                 else
+                 {
+
+                    new PopupMessage("Sorry, This email already have an account!").ShowDialog();
+                    //MessageBox.Show("Sorry, The username is already taken!");
+                    textBoxemail.Text = "";
+
+
+
+
+                    /* try
                     {
                         MySqlConnection connection = new MySqlConnection(functions.connectionString);
                         string query = "INSERT INTO userTable (fname, lname, email, password) VALUES ('" + fname + "','" + lname + "','" + email + "','" + password + "')";
@@ -57,8 +110,8 @@ namespace PMS
                         textBoxemail.Text = "";
                         textBoxpassword1.Text = "";
                         textBoxpassword2.Text = "";
+                        }*/
                 }
-               // }
             }
             else
             {
@@ -68,5 +121,47 @@ namespace PMS
 
 
         }
+
+
+
+
+
+
+        public int UserTaken(string email)
+        {
+            int result = 0;
+
+
+            string selectQuery = "SELECT COUNT(*) FROM userTable WHERE email = @email";
+
+            dbConnection functions = new dbConnection();
+
+            using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand(selectQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@email", email);
+
+                        object queryResult = command.ExecuteScalar();
+                        if (queryResult != null)
+                        {
+                            result = Convert.ToInt32(queryResult);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+
+            return result;
+        }
+
+
     }
 }
