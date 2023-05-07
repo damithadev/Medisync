@@ -36,7 +36,7 @@
             // 
             this.lbl_popup.AutoSize = true;
             this.lbl_popup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_popup.Location = new System.Drawing.Point(97, 75);
+            this.lbl_popup.Location = new System.Drawing.Point(85, 89);
             this.lbl_popup.Name = "lbl_popup";
             this.lbl_popup.Size = new System.Drawing.Size(51, 25);
             this.lbl_popup.TabIndex = 0;

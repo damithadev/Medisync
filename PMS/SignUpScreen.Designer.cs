@@ -40,50 +40,56 @@
             this.textBoxpassword1 = new System.Windows.Forms.TextBox();
             this.textBoxpassword2 = new System.Windows.Forms.TextBox();
             this.Close_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(438, 259);
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(426, 253);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
+            this.label3.Size = new System.Drawing.Size(54, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Email";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(438, 208);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(426, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 16);
+            this.label2.Size = new System.Drawing.Size(96, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Last Name";
             // 
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(438, 153);
+            this.label.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(426, 147);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(72, 16);
+            this.label.Size = new System.Drawing.Size(98, 23);
             this.label.TabIndex = 2;
             this.label.Text = "First Name";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(438, 312);
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(426, 306);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.Size = new System.Drawing.Size(86, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Password";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(438, 367);
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(426, 361);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 16);
+            this.label5.Size = new System.Drawing.Size(155, 23);
             this.label5.TabIndex = 4;
             this.label5.Text = "Re-type Password";
             // 
@@ -142,11 +148,23 @@
             this.Close_btn.UseVisualStyleBackColor = true;
             this.Close_btn.Click += new System.EventHandler(this.Close_btn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(546, 507);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(233, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Already have an account? Sign In";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // SignUpScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 619);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Close_btn);
             this.Controls.Add(this.textBoxpassword2);
             this.Controls.Add(this.textBoxpassword1);
@@ -182,5 +200,6 @@
         private System.Windows.Forms.TextBox textBoxpassword1;
         private System.Windows.Forms.TextBox textBoxpassword2;
         private System.Windows.Forms.Button Close_btn;
+        private System.Windows.Forms.Label label1;
     }
 }
