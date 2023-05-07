@@ -323,6 +323,7 @@
             this.Name = "frm_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient Management System";
+            this.Load += new System.EventHandler(this.frm_main_Load);
             this.pnl_sidebar.ResumeLayout(false);
             this.pnl_tabs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

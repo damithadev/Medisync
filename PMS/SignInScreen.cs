@@ -16,6 +16,7 @@ namespace PMS
         public SignInScreen()
         {
             InitializeComponent();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,8 +25,11 @@ namespace PMS
             this.Hide();
         }
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
             string email = textBoxemail.Text;
             string password = textBoxpassword.Text;
 
@@ -54,6 +58,8 @@ namespace PMS
                             {
                                 // Login successful
                                 MessageBox.Show("Login successful!");
+                                new frm_main().Show();
+                                this.Hide();
                             }
                             else
                             {

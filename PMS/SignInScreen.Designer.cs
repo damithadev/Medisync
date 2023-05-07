@@ -63,6 +63,7 @@
             this.textBoxemail.Name = "textBoxemail";
             this.textBoxemail.Size = new System.Drawing.Size(160, 26);
             this.textBoxemail.TabIndex = 2;
+            this.textBoxemail.UseSystemPasswordChar = true;
             // 
             // textBoxpassword
             // 
@@ -71,6 +72,7 @@
             this.textBoxpassword.Name = "textBoxpassword";
             this.textBoxpassword.Size = new System.Drawing.Size(160, 30);
             this.textBoxpassword.TabIndex = 3;
+            this.textBoxpassword.UseSystemPasswordChar = true;
             // 
             // button1
             // 

@@ -118,5 +118,10 @@ namespace PMS
         {
            
         }
+
+        private void frm_main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
