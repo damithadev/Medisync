@@ -30,80 +30,86 @@ namespace PMS
             {
                 if (textBoxpassword1.Text == textBoxpassword2.Text)
                 {
+                    dbConnection functions = new dbConnection();
 
-                }
-                 dbConnection functions = new dbConnection();
-
-                if (UserTaken(email) == 0)
-                {
-                    // Create MySqlConnection and MySqlCommand objects
-                    using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
+                    if (UserTaken(email) == 0)
                     {
-                        using (MySqlCommand command = connection.CreateCommand())
+                        // Create MySqlConnection and MySqlCommand objects
+                        using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
                         {
-                            try
+                            using (MySqlCommand command = connection.CreateCommand())
                             {
-                                // Open the connection
-                                connection.Open();
-
-                                // Set the command text and parameters
-                                command.CommandText = "INSERT INTO userTable (fname, lname, email, password) VALUES (@fname, @lname, @email, @password)";
-                                command.Parameters.AddWithValue("@fname", fname);
-                                command.Parameters.AddWithValue("@lname", lname);
-                                command.Parameters.AddWithValue("@email", email);
-                                command.Parameters.AddWithValue("@password", password);
-
-                                // Execute the command
-                                int rowsAffected = command.ExecuteNonQuery();
-
-                                if (rowsAffected > 0)
+                                try
                                 {
-                                    // Data successfully inserted
-                                    MessageBox.Show("Account registered successfully! Please use email and password to login..");
+                                    // Open the connection
+                                    connection.Open();
+
+                                    // Set the command text and parameters
+                                    command.CommandText = "INSERT INTO userTable (fname, lname, email, password) VALUES (@fname, @lname, @email, @password)";
+                                    command.Parameters.AddWithValue("@fname", fname);
+                                    command.Parameters.AddWithValue("@lname", lname);
+                                    command.Parameters.AddWithValue("@email", email);
+                                    command.Parameters.AddWithValue("@password", password);
+
+                                    // Execute the command
+                                    int rowsAffected = command.ExecuteNonQuery();
+
+                                    if (rowsAffected > 0)
+                                    {
+                                        // Data successfully inserted
+                                        MessageBox.Show("Account registered successfully! Please use email and password to login..");
+                                    }
+                                    else
+                                    {
+                                        // No rows affected
+                                        MessageBox.Show("Failed registering account!");
+                                    }
                                 }
-                                else
+                                catch (Exception ex)
                                 {
-                                    // No rows affected
-                                    MessageBox.Show("Failed registering account!");
+                                    MessageBox.Show("Error registering account: " + ex.Message);
                                 }
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show("Error registering account: " + ex.Message);
-                            }
-                            finally
-                            {
-                                textBoxfname.Text = "";
-                                textBoxlname.Text = "";
-                                textBoxemail.Text = "";
-                                textBoxpassword1.Text = "";
-                                textBoxpassword2.Text = "";
+                                finally
+                                {
+                                    textBoxfname.Text = "";
+                                    textBoxlname.Text = "";
+                                    textBoxemail.Text = "";
+                                    textBoxpassword1.Text = "";
+                                    textBoxpassword2.Text = "";
+                                }
                             }
                         }
                     }
-
+                    else
+                    {
+                        new PopupMessage("Sorry, This email already have an account!").ShowDialog();
+                        //MessageBox.Show("Sorry, The username is already taken!");
+                        textBoxemail.Text = "";
+                    }
                 }
                 else
                 {
-
-                    new PopupMessage("Sorry, This email already have an account!").ShowDialog();
-                    //MessageBox.Show("Sorry, The username is already taken!");
-                    textBoxemail.Text = "";
-
+                    new PopupMessage("Password doesn't match!").ShowDialog();
+                    textBoxpassword1.Text = "";
+                    textBoxpassword2.Text = "";
                 }
-
-
-               
-                 
             }
             else
             {
                 new PopupMessage("Enter all required information!").ShowDialog();
             }
-
-
-
         }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
