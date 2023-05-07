@@ -90,8 +90,6 @@ namespace PMS
                 else
                 {
                     new PopupMessage("Password doesn't match!").ShowDialog();
-                    textBoxpassword1.Text = "";
-                    textBoxpassword2.Text = "";
                 }
             }
             else
@@ -151,6 +149,9 @@ namespace PMS
             return result;
         }
 
-
+        private void Close_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

@@ -39,6 +39,7 @@
             this.textBoxemail = new System.Windows.Forms.TextBox();
             this.textBoxpassword1 = new System.Windows.Forms.TextBox();
             this.textBoxpassword2 = new System.Windows.Forms.TextBox();
+            this.Close_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -131,11 +132,22 @@
             this.textBoxpassword2.Size = new System.Drawing.Size(153, 22);
             this.textBoxpassword2.TabIndex = 10;
             // 
+            // Close_btn
+            // 
+            this.Close_btn.Location = new System.Drawing.Point(931, 25);
+            this.Close_btn.Name = "Close_btn";
+            this.Close_btn.Size = new System.Drawing.Size(80, 27);
+            this.Close_btn.TabIndex = 11;
+            this.Close_btn.Text = "Close";
+            this.Close_btn.UseVisualStyleBackColor = true;
+            this.Close_btn.Click += new System.EventHandler(this.Close_btn_Click);
+            // 
             // SignUpScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 619);
+            this.Controls.Add(this.Close_btn);
             this.Controls.Add(this.textBoxpassword2);
             this.Controls.Add(this.textBoxpassword1);
             this.Controls.Add(this.textBoxemail);
@@ -169,5 +181,6 @@
         private System.Windows.Forms.TextBox textBoxemail;
         private System.Windows.Forms.TextBox textBoxpassword1;
         private System.Windows.Forms.TextBox textBoxpassword2;
+        private System.Windows.Forms.Button Close_btn;
     }
 }
