@@ -31,9 +31,9 @@
             this.username = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.Label();
             this.textBoxemail = new System.Windows.Forms.TextBox();
-            this.textBoxpassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBoxpassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // username
@@ -59,20 +59,9 @@
             // textBoxemail
             // 
             this.textBoxemail.Location = new System.Drawing.Point(458, 163);
-            this.textBoxemail.Multiline = true;
             this.textBoxemail.Name = "textBoxemail";
-            this.textBoxemail.Size = new System.Drawing.Size(160, 26);
+            this.textBoxemail.Size = new System.Drawing.Size(160, 22);
             this.textBoxemail.TabIndex = 2;
-            this.textBoxemail.UseSystemPasswordChar = true;
-            // 
-            // textBoxpassword
-            // 
-            this.textBoxpassword.Location = new System.Drawing.Point(458, 232);
-            this.textBoxpassword.Multiline = true;
-            this.textBoxpassword.Name = "textBoxpassword";
-            this.textBoxpassword.Size = new System.Drawing.Size(160, 30);
-            this.textBoxpassword.TabIndex = 3;
-            this.textBoxpassword.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -95,14 +84,22 @@
             this.label1.Text = "Don\'t have an account? Sign up";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // textBoxpassword
+            // 
+            this.textBoxpassword.Location = new System.Drawing.Point(458, 236);
+            this.textBoxpassword.Name = "textBoxpassword";
+            this.textBoxpassword.Size = new System.Drawing.Size(160, 22);
+            this.textBoxpassword.TabIndex = 6;
+            this.textBoxpassword.UseSystemPasswordChar = true;
+            // 
             // SignInScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(965, 491);
+            this.Controls.Add(this.textBoxpassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBoxpassword);
             this.Controls.Add(this.textBoxemail);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
@@ -120,8 +117,8 @@
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Label password;
         private System.Windows.Forms.TextBox textBoxemail;
-        private System.Windows.Forms.TextBox textBoxpassword;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxpassword;
     }
 }
