@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
+using MySql.Data.MySqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,9 +14,9 @@ namespace PMS
 
         public int checkUserTaken(string email)
         {
-            SqlConnection connection = new SqlConnection(connectionString);
-            string query = "SELECT COUNT(*) FROM UserTable WHERE email= '" + email + "'";
-            SqlCommand command = new SqlCommand(query, connection);
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            string query = "SELECT COUNT(*) FROM userTable WHERE email= '" + email + "'";
+            MySqlCommand command = new MySqlCommand(query, connection);
 
             connection.Open();
             int reservationExist = (int)command.ExecuteScalar();

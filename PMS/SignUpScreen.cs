@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,17 +30,17 @@ namespace PMS
             {
                 dbConnection functions = new dbConnection();
 
-                if (functions.checkUserTaken(email) == 0)
+               /* if (functions.checkUserTaken(email) == 0)
                 {
                     new PopupMessage("Sorry, The username is already taken!").ShowDialog();
                 }
                 else
-                {
+                {*/
                     try
                     {
-                        SqlConnection connection = new SqlConnection(functions.connectionString);
-                        string query = "INSERT INTO UserTable (fname, lname, email, password) VALUES ('" + fname + "','" + lname + "','" + email + "','" + password + "')";
-                        SqlCommand command = new SqlCommand(query, connection);
+                        MySqlConnection connection = new MySqlConnection(functions.connectionString);
+                        string query = "INSERT INTO userTable (fname, lname, email, password) VALUES ('" + fname + "','" + lname + "','" + email + "','" + password + "')";
+                        MySqlCommand command = new MySqlCommand(query, connection);
                         connection.Open();
                         command.ExecuteNonQuery();
                         new PopupMessage("Account registered successfully! Please use username and password to login..").ShowDialog();
@@ -56,8 +56,9 @@ namespace PMS
                         textBoxlname.Text = "";
                         textBoxemail.Text = "";
                         textBoxpassword1.Text = "";
-                    }
+                        textBoxpassword2.Text = "";
                 }
+               // }
             }
             else
             {
