@@ -50,6 +50,7 @@
             // grid_patient
             // 
             this.grid_patient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grid_patient.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.grid_patient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_patient.Location = new System.Drawing.Point(17, 86);
             this.grid_patient.Name = "grid_patient";

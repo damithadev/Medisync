@@ -124,6 +124,7 @@
             this.btn_signout.Text = "Sign Out";
             this.btn_signout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_signout.UseVisualStyleBackColor = true;
+            this.btn_signout.Click += new System.EventHandler(this.btn_signout_Click);
             // 
             // pictureBox3
             // 

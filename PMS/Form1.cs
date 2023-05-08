@@ -123,5 +123,10 @@ namespace PMS
         {
 
         }
+
+        private void btn_signout_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
