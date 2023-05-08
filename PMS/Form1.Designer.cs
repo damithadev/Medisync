@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
             this.pnl_sidebar = new System.Windows.Forms.Panel();
             this.pnl_tabs = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.btn_signout = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btn_about = new System.Windows.Forms.Button();
@@ -47,10 +49,9 @@
             this.pnl_top = new System.Windows.Forms.Panel();
             this.pnl_body = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.btn_signout = new System.Windows.Forms.Button();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pnl_sidebar.SuspendLayout();
             this.pnl_tabs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -60,7 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_body.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_sidebar
@@ -95,6 +95,35 @@
             this.pnl_tabs.Size = new System.Drawing.Size(288, 787);
             this.pnl_tabs.TabIndex = 1;
             this.pnl_tabs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_tabs_Paint);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(21, 733);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(39, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 12;
+            this.pictureBox8.TabStop = false;
+            // 
+            // btn_signout
+            // 
+            this.btn_signout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btn_signout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_signout.FlatAppearance.BorderSize = 0;
+            this.btn_signout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_signout.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signout.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_signout.Location = new System.Drawing.Point(0, 714);
+            this.btn_signout.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_signout.Name = "btn_signout";
+            this.btn_signout.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_signout.Size = new System.Drawing.Size(288, 73);
+            this.btn_signout.TabIndex = 11;
+            this.btn_signout.Text = "Sign Out";
+            this.btn_signout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_signout.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -309,41 +338,12 @@
             // 
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(1049, 20);
+            this.pictureBox7.Location = new System.Drawing.Point(1057, 20);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(230, 56);
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // btn_signout
-            // 
-            this.btn_signout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_signout.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_signout.FlatAppearance.BorderSize = 0;
-            this.btn_signout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_signout.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_signout.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_signout.Location = new System.Drawing.Point(0, 714);
-            this.btn_signout.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_signout.Name = "btn_signout";
-            this.btn_signout.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_signout.Size = new System.Drawing.Size(288, 73);
-            this.btn_signout.TabIndex = 11;
-            this.btn_signout.Text = "Sign Out";
-            this.btn_signout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_signout.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(21, 733);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(39, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 12;
-            this.pictureBox8.TabStop = false;
             // 
             // frm_main
             // 
@@ -360,6 +360,7 @@
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.pnl_sidebar.ResumeLayout(false);
             this.pnl_tabs.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -369,7 +370,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_body.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
