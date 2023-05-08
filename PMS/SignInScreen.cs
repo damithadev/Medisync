@@ -58,7 +58,7 @@ namespace PMS
                             if (result > 0)
                             {
                                 // Login successful
-                                MessageBox.Show("Login successful!");
+                                //MessageBox.Show("Login successful!");
                                 new frm_main().Show();
                                 this.Hide();
                             }
