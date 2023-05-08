@@ -33,20 +33,22 @@
             this.pnl_tabs = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btn_settings = new System.Windows.Forms.Button();
+            this.btn_about = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btn_about = new System.Windows.Forms.Button();
-            this.btn_perception = new System.Windows.Forms.Button();
-            this.btn_appontments = new System.Windows.Forms.Button();
-            this.btn_patients = new System.Windows.Forms.Button();
+            this.btn_prescriptions = new System.Windows.Forms.Button();
+            this.btn_appointment = new System.Windows.Forms.Button();
+            this.btn_patient = new System.Windows.Forms.Button();
+            this.btn_ovrview = new System.Windows.Forms.Button();
             this.pnl_logo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_top = new System.Windows.Forms.Panel();
             this.pnl_body = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btn_signout = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pnl_sidebar.SuspendLayout();
             this.pnl_tabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -58,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_body.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_sidebar
@@ -74,16 +77,18 @@
             // pnl_tabs
             // 
             this.pnl_tabs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(108)))), ((int)(((byte)(236)))));
+            this.pnl_tabs.Controls.Add(this.pictureBox8);
+            this.pnl_tabs.Controls.Add(this.btn_signout);
             this.pnl_tabs.Controls.Add(this.pictureBox3);
             this.pnl_tabs.Controls.Add(this.pictureBox6);
-            this.pnl_tabs.Controls.Add(this.btn_settings);
+            this.pnl_tabs.Controls.Add(this.btn_about);
             this.pnl_tabs.Controls.Add(this.pictureBox5);
             this.pnl_tabs.Controls.Add(this.pictureBox4);
             this.pnl_tabs.Controls.Add(this.pictureBox2);
-            this.pnl_tabs.Controls.Add(this.btn_about);
-            this.pnl_tabs.Controls.Add(this.btn_perception);
-            this.pnl_tabs.Controls.Add(this.btn_appontments);
-            this.pnl_tabs.Controls.Add(this.btn_patients);
+            this.pnl_tabs.Controls.Add(this.btn_prescriptions);
+            this.pnl_tabs.Controls.Add(this.btn_appointment);
+            this.pnl_tabs.Controls.Add(this.btn_patient);
+            this.pnl_tabs.Controls.Add(this.btn_ovrview);
             this.pnl_tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_tabs.Location = new System.Drawing.Point(0, 143);
             this.pnl_tabs.Name = "pnl_tabs";
@@ -112,25 +117,25 @@
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
             // 
-            // btn_settings
+            // btn_about
             // 
-            this.btn_settings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_settings.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_settings.FlatAppearance.BorderSize = 0;
-            this.btn_settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_settings.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_settings.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_settings.Location = new System.Drawing.Point(0, 292);
-            this.btn_settings.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_settings.Size = new System.Drawing.Size(288, 73);
-            this.btn_settings.TabIndex = 8;
-            this.btn_settings.Text = "Settings";
-            this.btn_settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_settings.UseVisualStyleBackColor = true;
-            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
+            this.btn_about.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_about.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_about.FlatAppearance.BorderSize = 0;
+            this.btn_about.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_about.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_about.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_about.Location = new System.Drawing.Point(0, 292);
+            this.btn_about.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_about.Name = "btn_about";
+            this.btn_about.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_about.Size = new System.Drawing.Size(288, 73);
+            this.btn_about.TabIndex = 8;
+            this.btn_about.Text = "About";
+            this.btn_about.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_about.UseVisualStyleBackColor = true;
+            this.btn_about.Click += new System.EventHandler(this.btn_settings_Click);
             // 
             // pictureBox5
             // 
@@ -162,85 +167,85 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // btn_about
+            // btn_prescriptions
             // 
-            this.btn_about.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_about.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_about.FlatAppearance.BorderSize = 0;
-            this.btn_about.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_about.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_about.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_about.Location = new System.Drawing.Point(0, 219);
-            this.btn_about.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_about.Name = "btn_about";
-            this.btn_about.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_about.Size = new System.Drawing.Size(288, 73);
-            this.btn_about.TabIndex = 3;
-            this.btn_about.Text = "About";
-            this.btn_about.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_about.UseVisualStyleBackColor = true;
-            this.btn_about.Click += new System.EventHandler(this.btn_payments_Click);
+            this.btn_prescriptions.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_prescriptions.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_prescriptions.FlatAppearance.BorderSize = 0;
+            this.btn_prescriptions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_prescriptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_prescriptions.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_prescriptions.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_prescriptions.Location = new System.Drawing.Point(0, 219);
+            this.btn_prescriptions.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_prescriptions.Name = "btn_prescriptions";
+            this.btn_prescriptions.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_prescriptions.Size = new System.Drawing.Size(288, 73);
+            this.btn_prescriptions.TabIndex = 3;
+            this.btn_prescriptions.Text = "Prescriptions";
+            this.btn_prescriptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_prescriptions.UseVisualStyleBackColor = true;
+            this.btn_prescriptions.Click += new System.EventHandler(this.btn_payments_Click);
             // 
-            // btn_perception
+            // btn_appointment
             // 
-            this.btn_perception.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_perception.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_perception.FlatAppearance.BorderSize = 0;
-            this.btn_perception.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_perception.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_perception.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_perception.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_perception.Location = new System.Drawing.Point(0, 146);
-            this.btn_perception.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_perception.Name = "btn_perception";
-            this.btn_perception.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_perception.Size = new System.Drawing.Size(288, 73);
-            this.btn_perception.TabIndex = 2;
-            this.btn_perception.Text = "Prescriptions";
-            this.btn_perception.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_perception.UseVisualStyleBackColor = true;
-            this.btn_perception.Click += new System.EventHandler(this.btn_perception_Click);
+            this.btn_appointment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_appointment.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_appointment.FlatAppearance.BorderSize = 0;
+            this.btn_appointment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_appointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_appointment.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_appointment.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_appointment.Location = new System.Drawing.Point(0, 146);
+            this.btn_appointment.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_appointment.Name = "btn_appointment";
+            this.btn_appointment.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_appointment.Size = new System.Drawing.Size(288, 73);
+            this.btn_appointment.TabIndex = 2;
+            this.btn_appointment.Text = "Appointments";
+            this.btn_appointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_appointment.UseVisualStyleBackColor = true;
+            this.btn_appointment.Click += new System.EventHandler(this.btn_perception_Click);
             // 
-            // btn_appontments
+            // btn_patient
             // 
-            this.btn_appontments.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_appontments.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_appontments.FlatAppearance.BorderSize = 0;
-            this.btn_appontments.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_appontments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_appontments.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_appontments.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_appontments.Location = new System.Drawing.Point(0, 73);
-            this.btn_appontments.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_appontments.Name = "btn_appontments";
-            this.btn_appontments.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_appontments.Size = new System.Drawing.Size(288, 73);
-            this.btn_appontments.TabIndex = 1;
-            this.btn_appontments.Text = "Appointments";
-            this.btn_appontments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_appontments.UseVisualStyleBackColor = true;
-            this.btn_appontments.Click += new System.EventHandler(this.btn_appontments_Click);
+            this.btn_patient.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_patient.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_patient.FlatAppearance.BorderSize = 0;
+            this.btn_patient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_patient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_patient.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_patient.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_patient.Location = new System.Drawing.Point(0, 73);
+            this.btn_patient.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_patient.Name = "btn_patient";
+            this.btn_patient.Padding = new System.Windows.Forms.Padding(63, 0, 0, 0);
+            this.btn_patient.Size = new System.Drawing.Size(288, 73);
+            this.btn_patient.TabIndex = 1;
+            this.btn_patient.Text = "Patient";
+            this.btn_patient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_patient.UseVisualStyleBackColor = true;
+            this.btn_patient.Click += new System.EventHandler(this.btn_appontments_Click);
             // 
-            // btn_patients
+            // btn_ovrview
             // 
-            this.btn_patients.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_patients.FlatAppearance.BorderColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_patients.FlatAppearance.BorderSize = 0;
-            this.btn_patients.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_patients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patients.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_patients.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_patients.Location = new System.Drawing.Point(0, 0);
-            this.btn_patients.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_patients.Name = "btn_patients";
-            this.btn_patients.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_patients.Size = new System.Drawing.Size(288, 73);
-            this.btn_patients.TabIndex = 0;
-            this.btn_patients.Text = "Patients";
-            this.btn_patients.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_patients.UseVisualStyleBackColor = true;
-            this.btn_patients.Click += new System.EventHandler(this.btn_patients_Click);
+            this.btn_ovrview.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_ovrview.FlatAppearance.BorderColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_ovrview.FlatAppearance.BorderSize = 0;
+            this.btn_ovrview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_ovrview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ovrview.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ovrview.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_ovrview.Location = new System.Drawing.Point(0, 0);
+            this.btn_ovrview.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_ovrview.Name = "btn_ovrview";
+            this.btn_ovrview.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_ovrview.Size = new System.Drawing.Size(288, 73);
+            this.btn_ovrview.TabIndex = 0;
+            this.btn_ovrview.Text = "Overview";
+            this.btn_ovrview.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ovrview.UseVisualStyleBackColor = true;
+            this.btn_ovrview.Click += new System.EventHandler(this.btn_patients_Click);
             // 
             // pnl_logo
             // 
@@ -311,6 +316,35 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
+            // btn_signout
+            // 
+            this.btn_signout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btn_signout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_signout.FlatAppearance.BorderSize = 0;
+            this.btn_signout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_signout.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signout.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_signout.Location = new System.Drawing.Point(0, 714);
+            this.btn_signout.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_signout.Name = "btn_signout";
+            this.btn_signout.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_signout.Size = new System.Drawing.Size(288, 73);
+            this.btn_signout.TabIndex = 11;
+            this.btn_signout.Text = "Sign Out";
+            this.btn_signout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_signout.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(21, 733);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(39, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 12;
+            this.pictureBox8.TabStop = false;
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -335,6 +369,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_body.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,17 +383,19 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_tabs;
-        private System.Windows.Forms.Button btn_about;
-        private System.Windows.Forms.Button btn_perception;
-        private System.Windows.Forms.Button btn_appontments;
-        private System.Windows.Forms.Button btn_patients;
+        private System.Windows.Forms.Button btn_prescriptions;
+        private System.Windows.Forms.Button btn_appointment;
+        private System.Windows.Forms.Button btn_patient;
+        private System.Windows.Forms.Button btn_ovrview;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button btn_settings;
+        private System.Windows.Forms.Button btn_about;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button btn_signout;
     }
 }
 
