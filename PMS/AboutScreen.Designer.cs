@@ -1,6 +1,6 @@
 ﻿namespace PMS
 {
-    partial class frm_payment
+    partial class AboutScreen
     {
         /// <summary>
         /// Required designer variable.

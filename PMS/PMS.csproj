@@ -119,11 +119,11 @@
     <Compile Include="PatientScreen.Designer.cs">
       <DependentUpon>PatientScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_payment.cs">
+    <Compile Include="AboutScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_payment.Designer.cs">
-      <DependentUpon>frm_payment.cs</DependentUpon>
+    <Compile Include="AboutScreen.Designer.cs">
+      <DependentUpon>AboutScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="PerceptionScreen.cs">
       <SubType>Form</SubType>
@@ -175,8 +175,8 @@
     <EmbeddedResource Include="PatientScreen.resx">
       <DependentUpon>PatientScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_payment.resx">
-      <DependentUpon>frm_payment.cs</DependentUpon>
+    <EmbeddedResource Include="AboutScreen.resx">
+      <DependentUpon>AboutScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PerceptionScreen.resx">
       <DependentUpon>PerceptionScreen.cs</DependentUpon>

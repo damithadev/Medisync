@@ -91,17 +91,17 @@ namespace PMS
 
         private void btn_perception_Click(object sender, EventArgs e)
         {
-            openChildForm(new PerceptionScreen());
+            openChildForm(new AppointmentScreen());
         }
 
         private void btn_payments_Click(object sender, EventArgs e)
         {
-            openChildForm(new frm_payment());
+            openChildForm(new PerceptionScreen());
         }
 
         private void btn_settings_Click(object sender, EventArgs e)
         {
-            openChildForm(new frm_settings());
+            openChildForm(new AboutScreen());
         }
 
         private void pnl_tabs_Paint(object sender, PaintEventArgs e)

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class frm_payment : Form
+    public partial class AboutScreen : Form
     {
-        public frm_payment()
+        public AboutScreen()
         {
             InitializeComponent();
         }
