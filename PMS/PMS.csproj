@@ -125,11 +125,11 @@
     <Compile Include="frm_payment.Designer.cs">
       <DependentUpon>frm_payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_perception.cs">
+    <Compile Include="PerceptionScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_perception.Designer.cs">
-      <DependentUpon>frm_perception.cs</DependentUpon>
+    <Compile Include="PerceptionScreen.Designer.cs">
+      <DependentUpon>PerceptionScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_settings.cs">
       <SubType>Form</SubType>
@@ -178,8 +178,8 @@
     <EmbeddedResource Include="frm_payment.resx">
       <DependentUpon>frm_payment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_perception.resx">
-      <DependentUpon>frm_perception.cs</DependentUpon>
+    <EmbeddedResource Include="PerceptionScreen.resx">
+      <DependentUpon>PerceptionScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_settings.resx">
       <DependentUpon>frm_settings.cs</DependentUpon>

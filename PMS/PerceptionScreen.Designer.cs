@@ -1,6 +1,6 @@
 ﻿namespace PMS
 {
-    partial class frm_perception
+    partial class PerceptionScreen
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class frm_perception : Form
+    public partial class PerceptionScreen : Form
     {
-        public frm_perception()
+        public PerceptionScreen()
         {
             InitializeComponent();
         }

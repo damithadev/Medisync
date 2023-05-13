@@ -91,7 +91,7 @@ namespace PMS
 
         private void btn_perception_Click(object sender, EventArgs e)
         {
-            openChildForm(new frm_perception());
+            openChildForm(new PerceptionScreen());
         }
 
         private void btn_payments_Click(object sender, EventArgs e)
