@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class frm_patient : Form
+    public partial class PatientScreen : Form
     {
-        public frm_patient()
+        public PatientScreen()
         {
             InitializeComponent();
         }

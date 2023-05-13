@@ -81,7 +81,7 @@ namespace PMS
 
         private void btn_appontments_Click(object sender, EventArgs e)
         {
-            openChildForm(new frm_patient());
+            openChildForm(new PatientScreen());
         }
 
         private void pnl_body_Paint(object sender, PaintEventArgs e)

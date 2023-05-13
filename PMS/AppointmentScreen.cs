@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class frm_appointment : Form
+    public partial class AppointmentScreen : Form
     {
-        public frm_appointment()
+        public AppointmentScreen()
         {
             InitializeComponent();
         }

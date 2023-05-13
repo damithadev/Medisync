@@ -1,6 +1,6 @@
 ﻿namespace PMS
 {
-    partial class frm_appointment
+    partial class AppointmentScreen
     {
         /// <summary>
         /// Required designer variable.
