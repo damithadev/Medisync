@@ -101,11 +101,11 @@
       <DependentUpon>AddNewPatientScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="dbConnection.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="InitialDashboardScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="InitialDashboardScreen.Designer.cs">
+      <DependentUpon>InitialDashboardScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="AppointmentScreen.cs">
       <SubType>Form</SubType>
@@ -166,11 +166,14 @@
     <EmbeddedResource Include="AddNewPatientScreen.resx">
       <DependentUpon>AddNewPatientScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="InitialDashboardScreen.resx">
+      <DependentUpon>InitialDashboardScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppointmentScreen.resx">
       <DependentUpon>AppointmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverviewScreen.resx">
+      <DependentUpon>OverviewScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientScreen.resx">
       <DependentUpon>PatientScreen.cs</DependentUpon>
