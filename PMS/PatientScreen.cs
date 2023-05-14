@@ -70,6 +70,11 @@ namespace PMS
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
             AddNewPatientScreen obj = new AddNewPatientScreen();
 
             obj.Show();
