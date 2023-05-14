@@ -33,7 +33,7 @@ namespace PMS
             {
                 connection.Open();
 
-                string query = "SELECT * FROM userTable";
+                string query = "SELECT * FROM patientTable";
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     MySqlDataAdapter adapter = new MySqlDataAdapter();

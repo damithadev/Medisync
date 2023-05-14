@@ -32,7 +32,7 @@ namespace PMS
                 {
                     dbConnection functions = new dbConnection();
 
-                    if (UserTaken(email) == 0)
+                    if (functions.UserTaken(email) == 0)
                     {
                         // Create MySqlConnection and MySqlCommand objects
                         using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
