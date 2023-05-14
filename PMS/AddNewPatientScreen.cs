@@ -36,5 +36,10 @@ namespace PMS
         {
             this.Hide();
         }
+
+        private void guna2ImageButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

@@ -76,6 +76,9 @@ namespace PMS
                                     textBoxemail.Text = "";
                                     textBoxpassword1.Text = "";
                                     textBoxpassword2.Text = "";
+                                    this.Hide();
+                                    SignInScreen obj = new SignInScreen();
+                                    obj.Show();
                                 }
                             }
                         }
