@@ -19,7 +19,7 @@ namespace PMS
 
         private void frm_appointment_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
