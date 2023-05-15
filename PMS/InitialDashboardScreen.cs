@@ -38,13 +38,6 @@ namespace PMS
             
 
 
-
-
-
-
-
-
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -121,7 +114,7 @@ namespace PMS
 
         private void frm_main_Load(object sender, EventArgs e)
         {
-
+            openChildForm(new OverviewScreen());
         }
 
         private void btn_signout_Click(object sender, EventArgs e)
