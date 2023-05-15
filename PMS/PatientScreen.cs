@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -88,9 +89,16 @@ namespace PMS
 
             // Change the width of the height column
             guna2DataGridView1.Columns[8].Width = 70; // Adjust the desired width value
+
+            //border radius
+            Guna2Elipse elipse = new Guna2Elipse();
+            elipse.TargetControl = guna2DataGridView1;
+            elipse.BorderRadius = 20;
+
+
         }
 
-       
+
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
