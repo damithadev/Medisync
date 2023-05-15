@@ -87,7 +87,7 @@ namespace PMS
                             connection.Open();
 
                             // Set the command text and parameters
-                            command.CommandText = "INSERT INTO patientTable (Name, NIC, Age, Gender, Diagnosis, Blood_Group, Weight, Height, Email) VALUES (@name, @nic, @age, @gender, @diagnosis, @bloodGroup, @weight, @height, @email)";
+                            command.CommandText = "INSERT INTO patientTable (Name, NIC, Age, Gender, Diagnosis, Blood, Weight, Height, Email) VALUES (@name, @nic, @age, @gender, @diagnosis, @bloodGroup, @weight, @height, @email)";
                             command.Parameters.AddWithValue("@Name", name);
                             command.Parameters.AddWithValue("@NIC", nic);
                             command.Parameters.AddWithValue("@Age", age);

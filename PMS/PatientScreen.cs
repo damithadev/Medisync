@@ -61,6 +61,33 @@ namespace PMS
             {
                 column.DefaultCellStyle.Font = new Font("Arial", 10);
             }
+
+            // Change the width of the id column
+            guna2DataGridView1.Columns[0].Width = 40; // Adjust the desired width value
+
+            // Change the width of the name column
+            guna2DataGridView1.Columns[1].Width = 120; // Adjust the desired width value
+
+            // Change the width of the nic column
+            guna2DataGridView1.Columns[2].Width = 130; // Adjust the desired width value
+
+            // Change the width of the age column
+            guna2DataGridView1.Columns[3].Width = 50; // Adjust the desired width value
+
+            // Change the width of the gender column
+            guna2DataGridView1.Columns[4].Width = 80; // Adjust the desired width value
+
+            // Change the width of the diagnosis column
+            guna2DataGridView1.Columns[5].Width = 100; // Adjust the desired width value
+
+            // Change the width of the blood column
+            guna2DataGridView1.Columns[6].Width = 70; // Adjust the desired width value
+
+            // Change the width of the weight column
+            guna2DataGridView1.Columns[7].Width = 70; // Adjust the desired width value
+
+            // Change the width of the height column
+            guna2DataGridView1.Columns[8].Width = 70; // Adjust the desired width value
         }
 
        
