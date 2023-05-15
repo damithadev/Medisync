@@ -125,12 +125,6 @@
     <Compile Include="AboutScreen.Designer.cs">
       <DependentUpon>AboutScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="PerceptionScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PerceptionScreen.Designer.cs">
-      <DependentUpon>PerceptionScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +136,12 @@
     </Compile>
     <Compile Include="OverviewScreen.Designer.cs">
       <DependentUpon>OverviewScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerceptionScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerceptionScreen.Designer.cs">
+      <DependentUpon>PerceptionScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="PopupMessage.cs">
       <SubType>Form</SubType>
@@ -181,11 +181,11 @@
     <EmbeddedResource Include="AboutScreen.resx">
       <DependentUpon>AboutScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PerceptionScreen.resx">
-      <DependentUpon>PerceptionScreen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_settings.resx">
       <DependentUpon>frm_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerceptionScreen.resx">
+      <DependentUpon>PerceptionScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopupMessage.resx">
       <DependentUpon>PopupMessage.cs</DependentUpon>
