@@ -87,13 +87,13 @@ namespace PMS
                             connection.Open();
 
                             // Set the command text and parameters
-                            command.CommandText = "INSERT INTO patientTable (Name, NIC, Age, Gender, Diagnosis, Blood Group, Weight, Height, Email) VALUES (@name, @nic, @age, @gender, @diagnosis, @bloodGroup, @weight, @height, @email)";
+                            command.CommandText = "INSERT INTO patientTable (Name, NIC, Age, Gender, Diagnosis, Blood_Group, Weight, Height, Email) VALUES (@name, @nic, @age, @gender, @diagnosis, @bloodGroup, @weight, @height, @email)";
                             command.Parameters.AddWithValue("@Name", name);
                             command.Parameters.AddWithValue("@NIC", nic);
                             command.Parameters.AddWithValue("@Age", age);
                             command.Parameters.AddWithValue("@Gender", gender);
                             command.Parameters.AddWithValue("@Diagnosis", diagnosis);
-                            command.Parameters.AddWithValue("@Blood", bloodGroup);
+                            command.Parameters.AddWithValue("@bloodGroup", bloodGroup);
                             command.Parameters.AddWithValue("@Weight", weight);
                             command.Parameters.AddWithValue("@Height", height);
                             command.Parameters.AddWithValue("@Email", email);
@@ -111,6 +111,7 @@ namespace PMS
                                 // No rows affected
                                 MessageBox.Show("Patient added Failed!");
                             }
+                           
                         }
                         catch (Exception ex)
                         {
@@ -118,8 +119,8 @@ namespace PMS
                         }
                         finally
                         {
-                            namebox.Text = "";
                             nicbox.Text = "";
+                            namebox.Text = "";
                             agebox.Text = "";
                             radiobtnMale.Checked = false;
                             radiobtnFemale.Checked = false;
@@ -129,8 +130,7 @@ namespace PMS
                             weightbox.Text = "";
                             emailbox.Text = "";
                             this.Hide();
-                            PatientScreen obj = new PatientScreen();
-                            obj.loadData();
+                            
                         }
                     }
                 }

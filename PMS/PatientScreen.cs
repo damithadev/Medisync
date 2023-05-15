@@ -19,12 +19,7 @@ namespace PMS
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
-
-
-
+        private DataTable dt; // Declare a class-level DataTable variable
         public void loadData()
         {
             dbConnection functions = new dbConnection();
@@ -38,7 +33,7 @@ namespace PMS
                 {
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     adapter.SelectCommand = command;
-                    DataTable dt = new DataTable();
+                    dt = new DataTable(); // Assign the DataTable to the class-level variable
                     adapter.Fill(dt);
 
                     BindingSource bindingSource = new BindingSource();
@@ -50,7 +45,7 @@ namespace PMS
             }
         }
 
-        private void frm_patient_Load(object sender, EventArgs e)
+        private void PatientScreenLoad(object sender, EventArgs e)
         {
             loadData();
             string hexColor = "#386CEC"; // Red color
@@ -68,10 +63,7 @@ namespace PMS
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           
-        }
+       
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
@@ -79,5 +71,13 @@ namespace PMS
 
             obj.Show();
         }
+
+        private void refreshbtnclick(object sender, EventArgs e)
+        {
+            loadData();
+
+        }
+
+       
     }
 }

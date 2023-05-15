@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewPatientScreen));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.nicbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.namebox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.addbtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.cancelbtn = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.namebox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nicbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,28 +80,28 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Add New Patient";
             // 
-            // nicbox
+            // namebox
             // 
-            this.nicbox.BorderRadius = 3;
-            this.nicbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nicbox.DefaultText = "";
-            this.nicbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.nicbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.nicbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nicbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nicbox.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.nicbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nicbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nicbox.ForeColor = System.Drawing.Color.DimGray;
-            this.nicbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nicbox.Location = new System.Drawing.Point(241, 148);
-            this.nicbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.nicbox.Name = "nicbox";
-            this.nicbox.PasswordChar = '\0';
-            this.nicbox.PlaceholderText = "";
-            this.nicbox.SelectedText = "";
-            this.nicbox.Size = new System.Drawing.Size(265, 31);
-            this.nicbox.TabIndex = 3;
+            this.namebox.BorderRadius = 3;
+            this.namebox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.namebox.DefaultText = "";
+            this.namebox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.namebox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.namebox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.namebox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.namebox.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.namebox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.namebox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.namebox.ForeColor = System.Drawing.Color.DimGray;
+            this.namebox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.namebox.Location = new System.Drawing.Point(241, 86);
+            this.namebox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.namebox.Name = "namebox";
+            this.namebox.PasswordChar = '\0';
+            this.namebox.PlaceholderText = "";
+            this.namebox.SelectedText = "";
+            this.namebox.Size = new System.Drawing.Size(265, 31);
+            this.namebox.TabIndex = 3;
             // 
             // label1
             // 
@@ -418,28 +418,28 @@
             this.cancelbtn.TabIndex = 26;
             this.cancelbtn.Click += new System.EventHandler(this.cancelbtnclick);
             // 
-            // namebox
+            // nicbox
             // 
-            this.namebox.BorderRadius = 3;
-            this.namebox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.namebox.DefaultText = "";
-            this.namebox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.namebox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.namebox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.namebox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.namebox.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.namebox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.namebox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.namebox.ForeColor = System.Drawing.Color.DimGray;
-            this.namebox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.namebox.Location = new System.Drawing.Point(241, 93);
-            this.namebox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.namebox.Name = "namebox";
-            this.namebox.PasswordChar = '\0';
-            this.namebox.PlaceholderText = "";
-            this.namebox.SelectedText = "";
-            this.namebox.Size = new System.Drawing.Size(265, 31);
-            this.namebox.TabIndex = 27;
+            this.nicbox.BorderRadius = 3;
+            this.nicbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nicbox.DefaultText = "";
+            this.nicbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.nicbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.nicbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nicbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nicbox.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.nicbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nicbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.nicbox.ForeColor = System.Drawing.Color.DimGray;
+            this.nicbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nicbox.Location = new System.Drawing.Point(241, 141);
+            this.nicbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nicbox.Name = "nicbox";
+            this.nicbox.PasswordChar = '\0';
+            this.nicbox.PlaceholderText = "";
+            this.nicbox.SelectedText = "";
+            this.nicbox.Size = new System.Drawing.Size(265, 31);
+            this.nicbox.TabIndex = 27;
             // 
             // AddNewPatientScreen
             // 
@@ -447,7 +447,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(591, 676);
-            this.Controls.Add(this.namebox);
+            this.Controls.Add(this.nicbox);
             this.Controls.Add(this.cancelbtn);
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.label12);
@@ -469,7 +469,7 @@
             this.Controls.Add(this.agebox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.nicbox);
+            this.Controls.Add(this.namebox);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -485,7 +485,7 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox nicbox;
+        private Guna.UI2.WinForms.Guna2TextBox namebox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -508,6 +508,6 @@
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2ImageButton addbtn;
         private Guna.UI2.WinForms.Guna2ImageButton cancelbtn;
-        private Guna.UI2.WinForms.Guna2TextBox namebox;
+        private Guna.UI2.WinForms.Guna2TextBox nicbox;
     }
 }
