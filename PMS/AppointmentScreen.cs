@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace PMS
 
         private void frm_appointment_Load(object sender, EventArgs e)
         {
-            
+         
         }
 
         private void label1_Click(object sender, EventArgs e)
