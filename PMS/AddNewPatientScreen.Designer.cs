@@ -476,6 +476,7 @@
             this.Name = "AddNewPatientScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New PatientScreen";
+            this.Load += new System.EventHandler(this.AddNewPatientScreen_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);

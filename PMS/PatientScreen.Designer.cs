@@ -34,9 +34,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientScreen));
             this.label1 = new System.Windows.Forms.Label();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.refreshbt = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -103,22 +103,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(110, 35);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(110, 35);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1040, 24);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(110, 35);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(167, 70);
-            this.guna2ImageButton1.TabIndex = 4;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
             // refreshbt
             // 
             this.refreshbt.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -128,10 +112,10 @@
             this.refreshbt.ImageOffset = new System.Drawing.Point(0, 0);
             this.refreshbt.ImageRotate = 0F;
             this.refreshbt.ImageSize = new System.Drawing.Size(25, 25);
-            this.refreshbt.Location = new System.Drawing.Point(970, 44);
+            this.refreshbt.Location = new System.Drawing.Point(972, 44);
             this.refreshbt.Name = "refreshbt";
             this.refreshbt.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.refreshbt.Size = new System.Drawing.Size(38, 33);
+            this.refreshbt.Size = new System.Drawing.Size(38, 50);
             this.refreshbt.TabIndex = 5;
             this.refreshbt.Click += new System.EventHandler(this.refreshbtnclick);
             // 
@@ -146,14 +130,30 @@
             this.guna2PictureBox1.TabIndex = 6;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(110, 35);
+            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(110, 35);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(1031, 41);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(110, 35);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(154, 53);
+            this.guna2ImageButton2.TabIndex = 7;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
+            // 
             // PatientScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1332, 892);
+            this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.refreshbt);
-            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2PictureBox1);
@@ -172,8 +172,8 @@
 
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton refreshbt;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
     }
 }

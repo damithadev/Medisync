@@ -150,5 +150,10 @@ namespace PMS
         {
             this.Hide();
         }
+
+        private void AddNewPatientScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -98,21 +98,17 @@ namespace PMS
 
         }
 
-
-
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            AddNewPatientScreen obj = new AddNewPatientScreen();
-
-            obj.Show();
-        }
-
         private void refreshbtnclick(object sender, EventArgs e)
         {
             loadData();
 
         }
 
-       
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            AddNewPatientScreen obj = new AddNewPatientScreen();
+
+            obj.Show();
+        }
     }
 }
