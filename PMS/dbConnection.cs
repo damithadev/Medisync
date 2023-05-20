@@ -90,6 +90,11 @@ namespace PMS
 
 
 
+        public bool IsNumeric(string value)
+        {
+            return int.TryParse(value, out _);
+        }
+
 
     }
 }

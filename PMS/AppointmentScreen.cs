@@ -99,11 +99,20 @@ namespace PMS
                             snotesbox.Text = "";
                             textBoxTime.Text = "";
                             ampmcmbbox.SelectedIndex = 0;
-
+                            connection.Close();
                         }
                     }
                 }
             }   
+        }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            nicbox.Text = "";
+            diagnosisbox.Text = "";
+            snotesbox.Text = "";
+            textBoxTime.Text = "";
+            ampmcmbbox.SelectedIndex = 0;
         }
     }
 }

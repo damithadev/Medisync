@@ -50,15 +50,15 @@ namespace PMS
                 MessageBox.Show("Enter all required information!");
             }
 
-            else if (!IsNumeric(stringage))   //age should be a number validation
+            else if (!functions.IsNumeric(stringage))   //age should be a number validation
             {
                 MessageBox.Show("Age should be a number!");
             }
-            else if (!IsNumeric(stringweight))
+            else if (!functions.IsNumeric(stringweight))
             {
                 MessageBox.Show("Weight should be a number!");
             }
-            else if (!IsNumeric(stringheight))
+            else if (!functions.IsNumeric(stringheight))
             {
                 MessageBox.Show("Height should be a number!");
             }
