@@ -181,6 +181,7 @@
             this.Name = "SignUpScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUpScreen";
+            this.Load += new System.EventHandler(this.SignUpScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

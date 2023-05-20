@@ -162,5 +162,10 @@ namespace PMS
             new SignInScreen().Show();
             this.Hide();
         }
+
+        private void SignUpScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
