@@ -27,23 +27,12 @@ namespace PMS
           
         }
 
-        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-           //guna date
-        }
-    
-        private void guna2DateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-            //guna time
-        }
-
-
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
 
             string nic = nicbox.Text;
             string diagnosis = diagnosisbox.Text;
-            string Snotes = snotesbox.Text;
+            string snotes = snotesbox.Text;
             
             //guna date picker
             DateTime selectedDate = guna2DateTimePicker1.Value;
@@ -51,10 +40,12 @@ namespace PMS
             
             dbConnection functions = new dbConnection();
 
+            //time 
+            string time = textBoxTime.Text + " " + ampmcmbbox.SelectedItem.ToString();
 
 
             //validate all fields are entered
-            if (nic == "" || diagnosis == "" || selectedDate == new DateTime(2023, 5, 15) || textBoxTime.Text == "22:45")
+            if (nic == "" || diagnosis == "" || selectedDate == new DateTime(2023, 5, 15) || textBoxTime.Text == "10:45")
             {
                 MessageBox.Show("Enter all required information!");
             }
@@ -64,7 +55,7 @@ namespace PMS
             }
             else
             {
-                /*using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
+                using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
                 {
                     using (MySqlCommand command = connection.CreateCommand())
                     {
@@ -74,7 +65,7 @@ namespace PMS
                             connection.Open();
 
                             // Set the command text and parameters
-                            command.CommandText = "INSERT INTO userTable (NIC, Date, Time, Diagnosis, Snotes) VALUES (@nic, @date, @time, @diagnosis, @snotes)";
+                            command.CommandText = "INSERT INTO appointmentTable (NIC, Date, Time, Diagnosis, Snotes) VALUES (@nic, @date, @time, @diagnosis, @snotes)";
 
                             command.Parameters.AddWithValue("@nic", nic);
                             command.Parameters.AddWithValue("@date", date);
@@ -89,54 +80,30 @@ namespace PMS
                             if (rowsAffected > 0)
                             {
                                 // Data successfully inserted
-                                MessageBox.Show("Account registered successfully! Please use email and password to login..");
+                                MessageBox.Show("Appointment added successfully!");
                             }
                             else
                             {
                                 // No rows affected
-                                MessageBox.Show("Failed registering account!");
+                                MessageBox.Show("Appointment added failed!");
                             }
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("Error registering account: " + ex.Message);
+                            MessageBox.Show("Error adding appointment: " + ex.Message);
                         }
                         finally
                         {
-                            textBoxfname.Text = "";
-                            textBoxlname.Text = "";
-                            textBoxemail.Text = "";
-                            textBoxpassword1.Text = "";
-                            textBoxpassword2.Text = "";
-                            this.Hide();
-                            SignInScreen obj = new SignInScreen();
-                            obj.Show();
+                            nicbox.Text = "";
+                            diagnosisbox.Text = "";
+                            snotesbox.Text = "";
+                            textBoxTime.Text = "";
+                            ampmcmbbox.SelectedIndex = 0;
+
                         }
                     }
-                }*/
-            }
-
-
-
-
-
-
-
-            //Time textbox
-
-            string enteredTime = textBoxTime.Text;
-
-            // Parse the entered time to a DateTime object
-            DateTime selectedDateTime;
-            if (DateTime.TryParse(enteredTime, out selectedDateTime))
-            {
-                // Display the selected time in a MessageBox
-                MessageBox.Show($"Selected time: {selectedDateTime.ToString("hh:mm tt")}");
-            }
-            else
-            {
-                MessageBox.Show("Invalid time format. Please enter a valid time.");
-            }
+                }
+            }   
         }
     }
 }

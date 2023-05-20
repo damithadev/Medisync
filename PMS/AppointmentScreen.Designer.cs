@@ -43,7 +43,7 @@
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.textBoxTime = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ampmcmbbox = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,7 +155,6 @@
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(340, 36);
             this.guna2DateTimePicker1.TabIndex = 8;
             this.guna2DateTimePicker1.Value = new System.DateTime(2023, 5, 15, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
             // 
             // diagnosisbox
             // 
@@ -254,24 +253,24 @@
             this.textBoxTime.Size = new System.Drawing.Size(340, 48);
             this.textBoxTime.TabIndex = 15;
             // 
-            // guna2ComboBox1
+            // ampmcmbbox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.ampmcmbbox.BackColor = System.Drawing.Color.Transparent;
+            this.ampmcmbbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ampmcmbbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ampmcmbbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ampmcmbbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ampmcmbbox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ampmcmbbox.ForeColor = System.Drawing.Color.Black;
+            this.ampmcmbbox.ItemHeight = 30;
+            this.ampmcmbbox.Items.AddRange(new object[] {
             "A.M.",
             "P.M."});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(591, 361);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(118, 36);
-            this.guna2ComboBox1.StartIndex = 0;
-            this.guna2ComboBox1.TabIndex = 16;
+            this.ampmcmbbox.Location = new System.Drawing.Point(591, 361);
+            this.ampmcmbbox.Name = "ampmcmbbox";
+            this.ampmcmbbox.Size = new System.Drawing.Size(118, 36);
+            this.ampmcmbbox.StartIndex = 0;
+            this.ampmcmbbox.TabIndex = 16;
             // 
             // AppointmentScreen
             // 
@@ -279,7 +278,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1305, 845);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.ampmcmbbox);
             this.Controls.Add(this.textBoxTime);
             this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.guna2ImageButton1);
@@ -319,6 +318,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2TextBox textBoxTime;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox ampmcmbbox;
     }
 }
