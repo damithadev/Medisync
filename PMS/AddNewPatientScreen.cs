@@ -23,7 +23,6 @@ namespace PMS
         {
             string name = namebox.Text;
             string nic = nicbox.Text;
-            string diagnosis = diagnosisbox.Text;
             string email = emailbox.Text;
 
             //numeric
@@ -46,7 +45,7 @@ namespace PMS
             dbConnection functions = new dbConnection();
 
             //validate all fields are entered
-            if (name == "" || nic == "" || diagnosis == "" || email == "" || stringage == "" || stringweight == "" || stringheight == "" || gender == "" || bloodcmbbox.SelectedIndex == -1)
+            if (name == "" || nic == "" || email == "" || stringage == "" || stringweight == "" || stringheight == "" || gender == "" || bloodcmbbox.SelectedIndex == -1)
             {
                 MessageBox.Show("Enter all required information!");
             }
@@ -87,12 +86,11 @@ namespace PMS
                             connection.Open();
 
                             // Set the command text and parameters
-                            command.CommandText = "INSERT INTO patientTable (Name, NIC, Age, Gender, Diagnosis, Blood, Weight, Height, Email) VALUES (@name, @nic, @age, @gender, @diagnosis, @bloodGroup, @weight, @height, @email)";
+                            command.CommandText = "INSERT INTO patientTable (Name, NIC, Age, Gender, Blood, Weight, Height, Email) VALUES (@name, @nic, @age, @gender, @bloodGroup, @weight, @height, @email)";
                             command.Parameters.AddWithValue("@Name", name);
                             command.Parameters.AddWithValue("@NIC", nic);
                             command.Parameters.AddWithValue("@Age", age);
                             command.Parameters.AddWithValue("@Gender", gender);
-                            command.Parameters.AddWithValue("@Diagnosis", diagnosis);
                             command.Parameters.AddWithValue("@bloodGroup", bloodGroup);
                             command.Parameters.AddWithValue("@Weight", weight);
                             command.Parameters.AddWithValue("@Height", height);
@@ -123,8 +121,7 @@ namespace PMS
                             namebox.Text = "";
                             agebox.Text = "";
                             radiobtnMale.Checked = false;
-                            radiobtnFemale.Checked = false;
-                            diagnosisbox.Text = "";
+                            radiobtnFemale.Checked = false; 
                             bloodcmbbox.SelectedIndex = -1;
                             heightbox.Text = "";
                             weightbox.Text = "";

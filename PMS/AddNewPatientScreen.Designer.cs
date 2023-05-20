@@ -37,8 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.agebox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.diagnosisbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -94,7 +92,7 @@
             this.namebox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.namebox.ForeColor = System.Drawing.Color.DimGray;
             this.namebox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.namebox.Location = new System.Drawing.Point(241, 86);
+            this.namebox.Location = new System.Drawing.Point(241, 107);
             this.namebox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.namebox.Name = "namebox";
             this.namebox.PasswordChar = '\0';
@@ -107,7 +105,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 93);
+            this.label1.Location = new System.Drawing.Point(70, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 24);
             this.label1.TabIndex = 4;
@@ -117,7 +115,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(73, 148);
+            this.label2.Location = new System.Drawing.Point(73, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 24);
             this.label2.TabIndex = 5;
@@ -127,7 +125,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(70, 263);
+            this.label3.Location = new System.Drawing.Point(70, 284);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 24);
             this.label3.TabIndex = 9;
@@ -137,7 +135,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(70, 209);
+            this.label4.Location = new System.Drawing.Point(70, 230);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 24);
             this.label4.TabIndex = 8;
@@ -157,7 +155,7 @@
             this.agebox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.agebox.ForeColor = System.Drawing.Color.DimGray;
             this.agebox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.agebox.Location = new System.Drawing.Point(241, 204);
+            this.agebox.Location = new System.Drawing.Point(241, 225);
             this.agebox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.agebox.Name = "agebox";
             this.agebox.PasswordChar = '\0';
@@ -166,44 +164,11 @@
             this.agebox.Size = new System.Drawing.Size(265, 29);
             this.agebox.TabIndex = 6;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(70, 314);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 24);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Diagnosis";
-            // 
-            // diagnosisbox
-            // 
-            this.diagnosisbox.BorderRadius = 3;
-            this.diagnosisbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.diagnosisbox.DefaultText = "";
-            this.diagnosisbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.diagnosisbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.diagnosisbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.diagnosisbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.diagnosisbox.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.diagnosisbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.diagnosisbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.diagnosisbox.ForeColor = System.Drawing.Color.DimGray;
-            this.diagnosisbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.diagnosisbox.Location = new System.Drawing.Point(241, 314);
-            this.diagnosisbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.diagnosisbox.Name = "diagnosisbox";
-            this.diagnosisbox.PasswordChar = '\0';
-            this.diagnosisbox.PlaceholderText = "";
-            this.diagnosisbox.SelectedText = "";
-            this.diagnosisbox.Size = new System.Drawing.Size(265, 29);
-            this.diagnosisbox.TabIndex = 11;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(70, 373);
+            this.label7.Location = new System.Drawing.Point(70, 347);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(118, 24);
             this.label7.TabIndex = 12;
@@ -213,7 +178,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(73, 425);
+            this.label8.Location = new System.Drawing.Point(73, 399);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 24);
             this.label8.TabIndex = 14;
@@ -223,7 +188,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(73, 471);
+            this.label9.Location = new System.Drawing.Point(73, 445);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 24);
             this.label9.TabIndex = 15;
@@ -233,7 +198,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(70, 524);
+            this.label10.Location = new System.Drawing.Point(70, 498);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 24);
             this.label10.TabIndex = 16;
@@ -253,7 +218,7 @@
             this.weightbox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.weightbox.ForeColor = System.Drawing.Color.DimGray;
             this.weightbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.weightbox.Location = new System.Drawing.Point(241, 420);
+            this.weightbox.Location = new System.Drawing.Point(241, 394);
             this.weightbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.weightbox.Name = "weightbox";
             this.weightbox.PasswordChar = '\0';
@@ -276,7 +241,7 @@
             this.heightbox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.heightbox.ForeColor = System.Drawing.Color.DimGray;
             this.heightbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.heightbox.Location = new System.Drawing.Point(241, 466);
+            this.heightbox.Location = new System.Drawing.Point(241, 440);
             this.heightbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.heightbox.Name = "heightbox";
             this.heightbox.PasswordChar = '\0';
@@ -299,7 +264,7 @@
             this.emailbox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.emailbox.ForeColor = System.Drawing.Color.DimGray;
             this.emailbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailbox.Location = new System.Drawing.Point(241, 519);
+            this.emailbox.Location = new System.Drawing.Point(241, 493);
             this.emailbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emailbox.Name = "emailbox";
             this.emailbox.PasswordChar = '\0';
@@ -314,7 +279,7 @@
             this.radiobtnMale.CheckedState.BorderThickness = 0;
             this.radiobtnMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.radiobtnMale.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radiobtnMale.Location = new System.Drawing.Point(270, 263);
+            this.radiobtnMale.Location = new System.Drawing.Point(270, 284);
             this.radiobtnMale.Name = "radiobtnMale";
             this.radiobtnMale.Size = new System.Drawing.Size(20, 20);
             this.radiobtnMale.TabIndex = 20;
@@ -330,7 +295,7 @@
             this.radiobtnFemale.CheckedState.BorderThickness = 0;
             this.radiobtnFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.radiobtnFemale.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radiobtnFemale.Location = new System.Drawing.Point(402, 263);
+            this.radiobtnFemale.Location = new System.Drawing.Point(402, 284);
             this.radiobtnFemale.Name = "radiobtnFemale";
             this.radiobtnFemale.Size = new System.Drawing.Size(20, 20);
             this.radiobtnFemale.TabIndex = 21;
@@ -361,7 +326,7 @@
             "O-",
             "B-",
             "AB-"});
-            this.bloodcmbbox.Location = new System.Drawing.Point(241, 361);
+            this.bloodcmbbox.Location = new System.Drawing.Point(241, 335);
             this.bloodcmbbox.Name = "bloodcmbbox";
             this.bloodcmbbox.Size = new System.Drawing.Size(265, 36);
             this.bloodcmbbox.TabIndex = 22;
@@ -370,7 +335,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(305, 263);
+            this.label11.Location = new System.Drawing.Point(305, 284);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(45, 20);
             this.label11.TabIndex = 23;
@@ -380,7 +345,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(445, 263);
+            this.label12.Location = new System.Drawing.Point(445, 284);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(61, 20);
             this.label12.TabIndex = 24;
@@ -395,7 +360,7 @@
             this.addbtn.ImageOffset = new System.Drawing.Point(0, 0);
             this.addbtn.ImageRotate = 0F;
             this.addbtn.ImageSize = new System.Drawing.Size(95, 35);
-            this.addbtn.Location = new System.Drawing.Point(145, 590);
+            this.addbtn.Location = new System.Drawing.Point(145, 564);
             this.addbtn.Name = "addbtn";
             this.addbtn.PressedState.ImageSize = new System.Drawing.Size(95, 35);
             this.addbtn.Size = new System.Drawing.Size(125, 47);
@@ -411,7 +376,7 @@
             this.cancelbtn.ImageOffset = new System.Drawing.Point(0, 0);
             this.cancelbtn.ImageRotate = 0F;
             this.cancelbtn.ImageSize = new System.Drawing.Size(95, 35);
-            this.cancelbtn.Location = new System.Drawing.Point(306, 590);
+            this.cancelbtn.Location = new System.Drawing.Point(306, 564);
             this.cancelbtn.Name = "cancelbtn";
             this.cancelbtn.PressedState.ImageSize = new System.Drawing.Size(95, 35);
             this.cancelbtn.Size = new System.Drawing.Size(124, 47);
@@ -432,7 +397,7 @@
             this.nicbox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nicbox.ForeColor = System.Drawing.Color.DimGray;
             this.nicbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nicbox.Location = new System.Drawing.Point(241, 141);
+            this.nicbox.Location = new System.Drawing.Point(241, 162);
             this.nicbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nicbox.Name = "nicbox";
             this.nicbox.PasswordChar = '\0';
@@ -462,8 +427,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.diagnosisbox);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.agebox);
@@ -493,8 +456,6 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox agebox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox diagnosisbox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
