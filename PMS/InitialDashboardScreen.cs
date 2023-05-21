@@ -94,7 +94,7 @@ namespace PMS
 
         private void btn_settings_Click(object sender, EventArgs e)
         {
-            openChildForm(new AboutScreen());
+            openChildForm(new SettingsScreen());
         }
 
         private void pnl_tabs_Paint(object sender, PaintEventArgs e)

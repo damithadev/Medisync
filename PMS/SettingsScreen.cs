@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class AboutScreen : Form
+    public partial class SettingsScreen : Form
     {
-        public AboutScreen()
+        public SettingsScreen()
         {
             InitializeComponent();
         }

@@ -316,6 +316,7 @@
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2PictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PerceptionScreen";
             this.Text = "PerceptionScreen";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
