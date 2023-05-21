@@ -78,5 +78,52 @@ namespace PMS
             }   
             
         }
+
+        private void updatebtnclick(object sender, EventArgs e)
+        {
+            string fname = fnamebox.Text;
+            string lname = lnamebox.Text;
+
+            using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
+            {
+                using (MySqlCommand command = connection.CreateCommand())
+                {
+                    try
+                    {
+                        // Open the connection
+                        connection.Open();
+
+                        // Set the command text and parameters
+                        command.CommandText = "UPDATE userTable SET fname = @fname, lname = @lname WHERE email = @email";
+                        command.Parameters.AddWithValue("@fname", fname);
+                        command.Parameters.AddWithValue("@lname", lname);
+                        command.Parameters.AddWithValue("@email", email);
+
+                        // Execute the command
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            // Data successfully updated
+                            MessageBox.Show("Profile updated successfully!");
+                        }
+                        else
+                        {
+                            // No rows affected
+                            MessageBox.Show("Profile update failed!");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error updating profile: " + ex.Message);
+                    }
+                    finally
+                    {
+                        // Close the connection
+                        connection.Close(); 
+                    }
+                }
+            }
+        }
     }
 }
