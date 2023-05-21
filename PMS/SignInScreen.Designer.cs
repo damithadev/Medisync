@@ -121,6 +121,7 @@
             this.Name = "SignInScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignInScreen";
+            this.Load += new System.EventHandler(this.SignInScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

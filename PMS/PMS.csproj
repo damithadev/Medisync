@@ -163,6 +163,7 @@
     <Compile Include="SignUpScreen.Designer.cs">
       <DependentUpon>SignUpScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSession.cs" />
     <EmbeddedResource Include="AddNewPatientScreen.resx">
       <DependentUpon>AddNewPatientScreen.cs</DependentUpon>
     </EmbeddedResource>

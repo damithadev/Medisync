@@ -59,6 +59,8 @@ namespace PMS
                             {
                                 // Login successful
                                 //MessageBox.Show("Login successful!");
+                                UserSession.Email = email;
+                                UserSession.IsLoggedIn = true;
                                 new frm_main().Show();
                                 this.Hide();
                             }
@@ -84,6 +86,11 @@ namespace PMS
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit(); 
+        }
+
+        private void SignInScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

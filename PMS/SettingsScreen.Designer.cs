@@ -40,7 +40,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.usernamelabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -205,15 +205,15 @@
             this.guna2ImageButton2.Size = new System.Drawing.Size(125, 54);
             this.guna2ImageButton2.TabIndex = 15;
             // 
-            // label5
+            // usernamelabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(339, 219);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 27);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Username";
+            this.usernamelabel.AutoSize = true;
+            this.usernamelabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamelabel.Location = new System.Drawing.Point(296, 219);
+            this.usernamelabel.Name = "usernamelabel";
+            this.usernamelabel.Size = new System.Drawing.Size(115, 27);
+            this.usernamelabel.TabIndex = 16;
+            this.usernamelabel.Text = "Username";
             // 
             // label6
             // 
@@ -255,7 +255,7 @@
             this.ClientSize = new System.Drawing.Size(1316, 845);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.usernamelabel);
             this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2PictureBox2);
@@ -269,6 +269,7 @@
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "SettingsScreen";
             this.Text = "frm_payment";
+            this.Load += new System.EventHandler(this.SettingsScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -289,7 +290,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label usernamelabel;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
