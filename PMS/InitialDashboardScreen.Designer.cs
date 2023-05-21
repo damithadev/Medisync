@@ -35,7 +35,7 @@
             this.btn_signout = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btn_about = new System.Windows.Forms.Button();
+            this.btn_settings = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -78,7 +78,7 @@
             this.pnl_tabs.Controls.Add(this.btn_signout);
             this.pnl_tabs.Controls.Add(this.pictureBox3);
             this.pnl_tabs.Controls.Add(this.pictureBox6);
-            this.pnl_tabs.Controls.Add(this.btn_about);
+            this.pnl_tabs.Controls.Add(this.btn_settings);
             this.pnl_tabs.Controls.Add(this.pictureBox5);
             this.pnl_tabs.Controls.Add(this.pictureBox4);
             this.pnl_tabs.Controls.Add(this.pictureBox2);
@@ -144,25 +144,25 @@
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
             // 
-            // btn_about
+            // btn_settings
             // 
-            this.btn_about.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_about.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_about.FlatAppearance.BorderSize = 0;
-            this.btn_about.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_about.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_about.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_about.Location = new System.Drawing.Point(0, 292);
-            this.btn_about.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_about.Name = "btn_about";
-            this.btn_about.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_about.Size = new System.Drawing.Size(288, 73);
-            this.btn_about.TabIndex = 8;
-            this.btn_about.Text = "About";
-            this.btn_about.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_about.UseVisualStyleBackColor = true;
-            this.btn_about.Click += new System.EventHandler(this.btn_settings_Click);
+            this.btn_settings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_settings.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_settings.FlatAppearance.BorderSize = 0;
+            this.btn_settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_settings.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_settings.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_settings.Location = new System.Drawing.Point(0, 292);
+            this.btn_settings.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_settings.Size = new System.Drawing.Size(288, 73);
+            this.btn_settings.TabIndex = 8;
+            this.btn_settings.Text = "Settings";
+            this.btn_settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_settings.UseVisualStyleBackColor = true;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
             // pictureBox5
             // 
@@ -375,7 +375,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button btn_about;
+        private System.Windows.Forms.Button btn_settings;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button btn_signout;

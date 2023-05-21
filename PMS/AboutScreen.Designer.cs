@@ -40,9 +40,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(78, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 31);
+            this.label1.Size = new System.Drawing.Size(129, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "About Dashboard";
+            this.label1.Text = "My Profile";
             // 
             // guna2PictureBox1
             // 
