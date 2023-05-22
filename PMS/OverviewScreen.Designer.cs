@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OverviewScreen));
-            this.label1 = new System.Windows.Forms.Label();
+            this.usernamelabel = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -46,16 +46,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // usernamelabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome, Username!";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.usernamelabel.AutoSize = true;
+            this.usernamelabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamelabel.Location = new System.Drawing.Point(76, 101);
+            this.usernamelabel.Name = "usernamelabel";
+            this.usernamelabel.Size = new System.Drawing.Size(250, 30);
+            this.usernamelabel.TabIndex = 0;
+            this.usernamelabel.Text = "Welcome, Username!";
             // 
             // guna2PictureBox1
             // 
@@ -123,7 +122,6 @@
             this.label6.Size = new System.Drawing.Size(114, 62);
             this.label6.TabIndex = 11;
             this.label6.Text = "150";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label2
             // 
@@ -175,10 +173,11 @@
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.guna2PictureBox2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.usernamelabel);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "OverviewScreen";
             this.Text = "OverviewScreen";
+            this.Load += new System.EventHandler(this.OverviewScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
@@ -191,7 +190,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label usernamelabel;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
