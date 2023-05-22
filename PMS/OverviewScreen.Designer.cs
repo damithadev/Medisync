@@ -35,10 +35,11 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Tpatientlbl = new System.Windows.Forms.Label();
+            this.Tappointmentlbl = new System.Windows.Forms.Label();
+            this.Tprescriptionslbl = new System.Windows.Forms.Label();
+            this.Trevenuelbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -111,53 +112,65 @@
             this.guna2PictureBox5.TabIndex = 6;
             this.guna2PictureBox5.TabStop = false;
             // 
-            // label6
+            // Tpatientlbl
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
-            this.label6.Location = new System.Drawing.Point(182, 291);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 62);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "150";
+            this.Tpatientlbl.AutoSize = true;
+            this.Tpatientlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.Tpatientlbl.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tpatientlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
+            this.Tpatientlbl.Location = new System.Drawing.Point(182, 291);
+            this.Tpatientlbl.Name = "Tpatientlbl";
+            this.Tpatientlbl.Size = new System.Drawing.Size(114, 62);
+            this.Tpatientlbl.TabIndex = 11;
+            this.Tpatientlbl.Text = "150";
             // 
-            // label2
+            // Tappointmentlbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
-            this.label2.Location = new System.Drawing.Point(508, 291);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 62);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "150";
+            this.Tappointmentlbl.AutoSize = true;
+            this.Tappointmentlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.Tappointmentlbl.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tappointmentlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
+            this.Tappointmentlbl.Location = new System.Drawing.Point(508, 291);
+            this.Tappointmentlbl.Name = "Tappointmentlbl";
+            this.Tappointmentlbl.Size = new System.Drawing.Size(114, 62);
+            this.Tappointmentlbl.TabIndex = 12;
+            this.Tappointmentlbl.Text = "150";
             // 
-            // label3
+            // Tprescriptionslbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
-            this.label3.Location = new System.Drawing.Point(192, 558);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 62);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "150";
+            this.Tprescriptionslbl.AutoSize = true;
+            this.Tprescriptionslbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.Tprescriptionslbl.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tprescriptionslbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
+            this.Tprescriptionslbl.Location = new System.Drawing.Point(192, 558);
+            this.Tprescriptionslbl.Name = "Tprescriptionslbl";
+            this.Tprescriptionslbl.Size = new System.Drawing.Size(114, 62);
+            this.Tprescriptionslbl.TabIndex = 13;
+            this.Tprescriptionslbl.Text = "150";
             // 
-            // label4
+            // Trevenuelbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
-            this.label4.Location = new System.Drawing.Point(508, 558);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 62);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "150";
+            this.Trevenuelbl.AutoSize = true;
+            this.Trevenuelbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.Trevenuelbl.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Trevenuelbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
+            this.Trevenuelbl.Location = new System.Drawing.Point(518, 558);
+            this.Trevenuelbl.Name = "Trevenuelbl";
+            this.Trevenuelbl.Size = new System.Drawing.Size(114, 62);
+            this.Trevenuelbl.TabIndex = 14;
+            this.Trevenuelbl.Text = "150";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
+            this.label1.Location = new System.Drawing.Point(472, 579);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 37);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Rs:";
             // 
             // OverviewScreen
             // 
@@ -165,10 +178,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1316, 869);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Trevenuelbl);
+            this.Controls.Add(this.Tprescriptionslbl);
+            this.Controls.Add(this.Tappointmentlbl);
+            this.Controls.Add(this.Tpatientlbl);
             this.Controls.Add(this.guna2PictureBox5);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2PictureBox3);
@@ -196,9 +210,10 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Tpatientlbl;
+        private System.Windows.Forms.Label Tappointmentlbl;
+        private System.Windows.Forms.Label Tprescriptionslbl;
+        private System.Windows.Forms.Label Trevenuelbl;
+        private System.Windows.Forms.Label label1;
     }
 }

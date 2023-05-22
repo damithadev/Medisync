@@ -39,6 +39,8 @@ namespace PMS
                             // Open the connection
                             connection.Open();
 
+
+                            // Get username for the Welcome message**********************
                             // Set the command text and parameters
                             command.CommandText = "SELECT fname, lname FROM userTable WHERE email = @email";
                             command.Parameters.AddWithValue("@email", email);
@@ -60,6 +62,49 @@ namespace PMS
                                     MessageBox.Show("Invalid username");
                                 }
                             }
+
+                            // get total patient count***********************
+                            command.CommandText = "SELECT COUNT(*) FROM patientTable";
+                            int rowCount1 = Convert.ToInt32(command.ExecuteScalar());
+                            Tpatientlbl.Text = "0" + rowCount1.ToString();
+
+
+
+                            // get total patient count***********************
+                           
+                            command.CommandText = "SELECT COUNT(*) FROM appointmentTable";
+                            int rowCount2 = Convert.ToInt32(command.ExecuteScalar());
+                            Tappointmentlbl.Text = "0" + rowCount2.ToString();
+
+
+
+                            // get total prescription count***********************
+
+                            command.CommandText = "SELECT COUNT(*) FROM prescriptionTable";
+                            int rowCount3 = Convert.ToInt32(command.ExecuteScalar());
+                            Tprescriptionslbl.Text = "0" + rowCount3.ToString();
+
+
+
+                            // get total revenue amount***********************
+                            // Set the command text to calculate the sum of the 'Bill' column
+                            command.CommandText = "SELECT SUM(Bill) FROM prescriptionTable";
+
+                            // Execute the command and retrieve the sum
+                            object result = command.ExecuteScalar();
+                            if (result != null && result != DBNull.Value)
+                            {
+                                int sum = Convert.ToInt32(result);
+
+                                // Display the sum in the label control
+                                Trevenuelbl.Text = sum.ToString();
+                            }
+                            else
+                            {
+                                // Handle the case when the sum is null or DBNull.Value
+                                Trevenuelbl.Text = "0";
+                            }
+
                         }
                         catch (Exception ex)
                         {
