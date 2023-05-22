@@ -83,44 +83,97 @@ namespace PMS
         {
             string fname = fnamebox.Text;
             string lname = lnamebox.Text;
+            string password1 = password1box.Text;
+            string password2 = password2box.Text;
 
-            using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
+            if ((password1 == "" ||  password2 == "") && !(password1 == password2) || !(password1 == password2))
             {
-                using (MySqlCommand command = connection.CreateCommand())
+                MessageBox.Show("Password doesn't match!");
+            }
+            else if ( !(password1 == password2) || (password1 == "" || password2 == ""))
+            {
+                using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
                 {
-                    try
+                    using (MySqlCommand command = connection.CreateCommand())
                     {
-                        // Open the connection
-                        connection.Open();
-
-                        // Set the command text and parameters
-                        command.CommandText = "UPDATE userTable SET fname = @fname, lname = @lname WHERE email = @email";
-                        command.Parameters.AddWithValue("@fname", fname);
-                        command.Parameters.AddWithValue("@lname", lname);
-                        command.Parameters.AddWithValue("@email", email);
-
-                        // Execute the command
-                        int rowsAffected = command.ExecuteNonQuery();
-
-                        if (rowsAffected > 0)
+                        try
                         {
-                            // Data successfully updated
-                            MessageBox.Show("Profile updated successfully!");
+                            // Open the connection
+                            connection.Open();
+
+                            // Set the command text and parameters
+                            command.CommandText = "UPDATE userTable SET fname = @fname, lname = @lname WHERE email = @email";
+                            command.Parameters.AddWithValue("@fname", fname);
+                            command.Parameters.AddWithValue("@lname", lname);
+                            command.Parameters.AddWithValue("@email", email);
+
+                            // Execute the command
+                            int rowsAffected = command.ExecuteNonQuery();
+
+                            if (rowsAffected > 0)
+                            {
+                                // Data successfully updated
+                                MessageBox.Show("Profile updated successfully!");
+                            }
+                            else
+                            {
+                                // No rows affected
+                                MessageBox.Show("Profile update failed!");
+                            }
                         }
-                        else
+                        catch (Exception ex)
                         {
-                            // No rows affected
-                            MessageBox.Show("Profile update failed!");
+                            MessageBox.Show("Error updating profile: " + ex.Message);
+                        }
+                        finally
+                        {
+                            // Close the connection
+                            connection.Close();
                         }
                     }
-                    catch (Exception ex)
+                }
+            }
+            else
+            {
+                using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
+                {
+                    using (MySqlCommand command = connection.CreateCommand())
                     {
-                        MessageBox.Show("Error updating profile: " + ex.Message);
-                    }
-                    finally
-                    {
-                        // Close the connection
-                        connection.Close(); 
+                        try
+                        {
+                            // Open the connection
+                            connection.Open();
+
+                            // Set the command text and parameters
+                            command.CommandText = "UPDATE userTable SET fname = @fname, lname = @lname, password = @password WHERE email = @email";
+                            command.Parameters.AddWithValue("@fname", fname);
+                            command.Parameters.AddWithValue("@lname", lname);
+                            command.Parameters.AddWithValue("@password", password1);
+                            command.Parameters.AddWithValue("@email", email);
+
+                            // Execute the command
+                            int rowsAffected = command.ExecuteNonQuery();
+
+                            if (rowsAffected > 0)
+                            {
+                                // Data successfully updated
+                                MessageBox.Show("Profile updated successfully!");
+                            }
+                            else
+                            {
+                                // No rows affected
+                                MessageBox.Show("Profile update failed!");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error updating profile: " + ex.Message);
+                        }
+                        finally
+                        {
+                            // Close the connection
+                            connection.Close();
+                        }
                     }
                 }
             }
