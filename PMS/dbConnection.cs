@@ -88,8 +88,6 @@ namespace PMS
             return result;
         }
 
-
-
         public bool IsNumeric(string value)
         {
             return int.TryParse(value, out _);

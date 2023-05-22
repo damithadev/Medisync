@@ -87,7 +87,6 @@ namespace PMS
 
 
                             // get total revenue amount***********************
-                            // Set the command text to calculate the sum of the 'Bill' column
                             command.CommandText = "SELECT SUM(Bill) FROM prescriptionTable";
 
                             // Execute the command and retrieve the sum
