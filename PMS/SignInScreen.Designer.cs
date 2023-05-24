@@ -62,7 +62,7 @@
             this.textBoxemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxemail.Location = new System.Drawing.Point(458, 163);
             this.textBoxemail.Name = "textBoxemail";
-            this.textBoxemail.Size = new System.Drawing.Size(160, 26);
+            this.textBoxemail.Size = new System.Drawing.Size(309, 26);
             this.textBoxemail.TabIndex = 2;
             // 
             // button1
@@ -91,7 +91,7 @@
             this.textBoxpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxpassword.Location = new System.Drawing.Point(458, 236);
             this.textBoxpassword.Name = "textBoxpassword";
-            this.textBoxpassword.Size = new System.Drawing.Size(160, 26);
+            this.textBoxpassword.Size = new System.Drawing.Size(309, 26);
             this.textBoxpassword.TabIndex = 6;
             this.textBoxpassword.UseSystemPasswordChar = true;
             // 

@@ -222,7 +222,8 @@
             this.weightbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.weightbox.Name = "weightbox";
             this.weightbox.PasswordChar = '\0';
-            this.weightbox.PlaceholderText = "";
+            this.weightbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.weightbox.PlaceholderText = "Kg";
             this.weightbox.SelectedText = "";
             this.weightbox.Size = new System.Drawing.Size(265, 29);
             this.weightbox.TabIndex = 17;
@@ -245,7 +246,8 @@
             this.heightbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.heightbox.Name = "heightbox";
             this.heightbox.PasswordChar = '\0';
-            this.heightbox.PlaceholderText = "";
+            this.heightbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.heightbox.PlaceholderText = "cm";
             this.heightbox.SelectedText = "";
             this.heightbox.Size = new System.Drawing.Size(265, 29);
             this.heightbox.TabIndex = 18;
