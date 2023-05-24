@@ -31,32 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
             this.pnl_sidebar = new System.Windows.Forms.Panel();
             this.pnl_tabs = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btn_signout = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btn_settings = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btn_prescriptions = new System.Windows.Forms.Button();
-            this.btn_appointment = new System.Windows.Forms.Button();
-            this.btn_patient = new System.Windows.Forms.Button();
-            this.btn_ovrview = new System.Windows.Forms.Button();
             this.pnl_logo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_top = new System.Windows.Forms.Panel();
             this.pnl_body = new System.Windows.Forms.Panel();
+            this.settingssButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.prescriptionButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.appointmentButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.patientButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.overviewButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnl_sidebar.SuspendLayout();
             this.pnl_tabs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnl_logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,34 +64,19 @@
             // pnl_tabs
             // 
             this.pnl_tabs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(75)))), ((int)(((byte)(253)))));
+            this.pnl_tabs.Controls.Add(this.settingssButton);
+            this.pnl_tabs.Controls.Add(this.prescriptionButton);
+            this.pnl_tabs.Controls.Add(this.appointmentButton);
+            this.pnl_tabs.Controls.Add(this.patientButton);
+            this.pnl_tabs.Controls.Add(this.overviewButton);
             this.pnl_tabs.Controls.Add(this.pictureBox8);
             this.pnl_tabs.Controls.Add(this.btn_signout);
-            this.pnl_tabs.Controls.Add(this.pictureBox3);
-            this.pnl_tabs.Controls.Add(this.pictureBox6);
-            this.pnl_tabs.Controls.Add(this.btn_settings);
-            this.pnl_tabs.Controls.Add(this.pictureBox5);
-            this.pnl_tabs.Controls.Add(this.pictureBox4);
-            this.pnl_tabs.Controls.Add(this.pictureBox2);
-            this.pnl_tabs.Controls.Add(this.btn_prescriptions);
-            this.pnl_tabs.Controls.Add(this.btn_appointment);
-            this.pnl_tabs.Controls.Add(this.btn_patient);
-            this.pnl_tabs.Controls.Add(this.btn_ovrview);
             this.pnl_tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_tabs.Location = new System.Drawing.Point(0, 143);
             this.pnl_tabs.Name = "pnl_tabs";
             this.pnl_tabs.Size = new System.Drawing.Size(288, 787);
             this.pnl_tabs.TabIndex = 1;
             this.pnl_tabs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_tabs_Paint);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(21, 733);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(39, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 12;
-            this.pictureBox8.TabStop = false;
             // 
             // btn_signout
             // 
@@ -122,157 +97,6 @@
             this.btn_signout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_signout.UseVisualStyleBackColor = true;
             this.btn_signout.Click += new System.EventHandler(this.btn_signout_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 88);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 42);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(21, 312);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(39, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            // 
-            // btn_settings
-            // 
-            this.btn_settings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_settings.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_settings.FlatAppearance.BorderSize = 0;
-            this.btn_settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_settings.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_settings.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_settings.Location = new System.Drawing.Point(0, 292);
-            this.btn_settings.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_settings.Size = new System.Drawing.Size(288, 73);
-            this.btn_settings.TabIndex = 8;
-            this.btn_settings.Text = "Settings";
-            this.btn_settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_settings.UseVisualStyleBackColor = true;
-            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(21, 239);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(39, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(21, 168);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(21, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btn_prescriptions
-            // 
-            this.btn_prescriptions.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_prescriptions.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_prescriptions.FlatAppearance.BorderSize = 0;
-            this.btn_prescriptions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_prescriptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_prescriptions.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_prescriptions.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_prescriptions.Location = new System.Drawing.Point(0, 219);
-            this.btn_prescriptions.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_prescriptions.Name = "btn_prescriptions";
-            this.btn_prescriptions.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_prescriptions.Size = new System.Drawing.Size(288, 73);
-            this.btn_prescriptions.TabIndex = 3;
-            this.btn_prescriptions.Text = "Prescriptions";
-            this.btn_prescriptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_prescriptions.UseVisualStyleBackColor = true;
-            this.btn_prescriptions.Click += new System.EventHandler(this.btn_payments_Click);
-            // 
-            // btn_appointment
-            // 
-            this.btn_appointment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_appointment.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_appointment.FlatAppearance.BorderSize = 0;
-            this.btn_appointment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_appointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_appointment.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_appointment.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_appointment.Location = new System.Drawing.Point(0, 146);
-            this.btn_appointment.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_appointment.Name = "btn_appointment";
-            this.btn_appointment.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_appointment.Size = new System.Drawing.Size(288, 73);
-            this.btn_appointment.TabIndex = 2;
-            this.btn_appointment.Text = "Appointments";
-            this.btn_appointment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_appointment.UseVisualStyleBackColor = true;
-            this.btn_appointment.Click += new System.EventHandler(this.btn_perception_Click);
-            // 
-            // btn_patient
-            // 
-            this.btn_patient.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_patient.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_patient.FlatAppearance.BorderSize = 0;
-            this.btn_patient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_patient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patient.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_patient.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_patient.Location = new System.Drawing.Point(0, 73);
-            this.btn_patient.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_patient.Name = "btn_patient";
-            this.btn_patient.Padding = new System.Windows.Forms.Padding(63, 0, 0, 0);
-            this.btn_patient.Size = new System.Drawing.Size(288, 73);
-            this.btn_patient.TabIndex = 1;
-            this.btn_patient.Text = "Patient";
-            this.btn_patient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_patient.UseVisualStyleBackColor = true;
-            this.btn_patient.Click += new System.EventHandler(this.btn_appontments_Click);
-            // 
-            // btn_ovrview
-            // 
-            this.btn_ovrview.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_ovrview.FlatAppearance.BorderColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_ovrview.FlatAppearance.BorderSize = 0;
-            this.btn_ovrview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_ovrview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ovrview.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ovrview.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_ovrview.Location = new System.Drawing.Point(0, 0);
-            this.btn_ovrview.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_ovrview.Name = "btn_ovrview";
-            this.btn_ovrview.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_ovrview.Size = new System.Drawing.Size(288, 73);
-            this.btn_ovrview.TabIndex = 0;
-            this.btn_ovrview.Text = "Overview";
-            this.btn_ovrview.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ovrview.UseVisualStyleBackColor = true;
-            this.btn_ovrview.Click += new System.EventHandler(this.btn_patients_Click);
             // 
             // pnl_logo
             // 
@@ -318,6 +142,101 @@
             this.pnl_body.TabIndex = 2;
             this.pnl_body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_body_Paint);
             // 
+            // settingssButton
+            // 
+            this.settingssButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.settingssButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.settingssButton.HoverState.Image = global::PMS.Properties.Resources.settingstSetImg;
+            this.settingssButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
+            this.settingssButton.Image = global::PMS.Properties.Resources.settingssDefaultImg;
+            this.settingssButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.settingssButton.ImageRotate = 0F;
+            this.settingssButton.ImageSize = new System.Drawing.Size(207, 57);
+            this.settingssButton.Location = new System.Drawing.Point(0, 320);
+            this.settingssButton.Name = "settingssButton";
+            this.settingssButton.PressedState.ImageSize = new System.Drawing.Size(207, 57);
+            this.settingssButton.Size = new System.Drawing.Size(288, 80);
+            this.settingssButton.TabIndex = 17;
+            this.settingssButton.Click += new System.EventHandler(this.settingsbutton_Click);
+            // 
+            // prescriptionButton
+            // 
+            this.prescriptionButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.prescriptionButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.prescriptionButton.HoverState.Image = global::PMS.Properties.Resources.prescriptionSetImg;
+            this.prescriptionButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
+            this.prescriptionButton.Image = global::PMS.Properties.Resources.prescriptionDefaultImg;
+            this.prescriptionButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.prescriptionButton.ImageRotate = 0F;
+            this.prescriptionButton.ImageSize = new System.Drawing.Size(207, 57);
+            this.prescriptionButton.Location = new System.Drawing.Point(0, 240);
+            this.prescriptionButton.Name = "prescriptionButton";
+            this.prescriptionButton.PressedState.ImageSize = new System.Drawing.Size(207, 57);
+            this.prescriptionButton.Size = new System.Drawing.Size(288, 80);
+            this.prescriptionButton.TabIndex = 16;
+            this.prescriptionButton.Click += new System.EventHandler(this.Prescriptionbutton_Click);
+            // 
+            // appointmentButton
+            // 
+            this.appointmentButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.appointmentButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.appointmentButton.HoverState.Image = global::PMS.Properties.Resources.appointmentSetImg;
+            this.appointmentButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
+            this.appointmentButton.Image = global::PMS.Properties.Resources.appointmentDefaultImg;
+            this.appointmentButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.appointmentButton.ImageRotate = 0F;
+            this.appointmentButton.ImageSize = new System.Drawing.Size(207, 57);
+            this.appointmentButton.Location = new System.Drawing.Point(0, 160);
+            this.appointmentButton.Name = "appointmentButton";
+            this.appointmentButton.PressedState.ImageSize = new System.Drawing.Size(207, 57);
+            this.appointmentButton.Size = new System.Drawing.Size(288, 80);
+            this.appointmentButton.TabIndex = 15;
+            this.appointmentButton.Click += new System.EventHandler(this.appointmentButton_Click);
+            // 
+            // patientButton
+            // 
+            this.patientButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.patientButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.patientButton.HoverState.Image = global::PMS.Properties.Resources.patientSetImg;
+            this.patientButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
+            this.patientButton.Image = global::PMS.Properties.Resources.patientDefaultImg;
+            this.patientButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.patientButton.ImageRotate = 0F;
+            this.patientButton.ImageSize = new System.Drawing.Size(207, 57);
+            this.patientButton.Location = new System.Drawing.Point(0, 80);
+            this.patientButton.Name = "patientButton";
+            this.patientButton.PressedState.ImageSize = new System.Drawing.Size(207, 57);
+            this.patientButton.Size = new System.Drawing.Size(288, 80);
+            this.patientButton.TabIndex = 14;
+            this.patientButton.Click += new System.EventHandler(this.patientButton_Click);
+            // 
+            // overviewButton
+            // 
+            this.overviewButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.overviewButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.overviewButton.HoverState.Image = global::PMS.Properties.Resources.overviewSetImg;
+            this.overviewButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
+            this.overviewButton.Image = global::PMS.Properties.Resources.overviewDefaultImg;
+            this.overviewButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.overviewButton.ImageRotate = 0F;
+            this.overviewButton.ImageSize = new System.Drawing.Size(207, 57);
+            this.overviewButton.Location = new System.Drawing.Point(0, 0);
+            this.overviewButton.Name = "overviewButton";
+            this.overviewButton.PressedState.ImageSize = new System.Drawing.Size(207, 57);
+            this.overviewButton.Size = new System.Drawing.Size(288, 80);
+            this.overviewButton.TabIndex = 13;
+            this.overviewButton.Click += new System.EventHandler(this.overviewButton_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(21, 733);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(39, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 12;
+            this.pictureBox8.TabStop = false;
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
@@ -344,13 +263,8 @@
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.pnl_sidebar.ResumeLayout(false);
             this.pnl_tabs.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnl_logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -364,19 +278,14 @@
         private System.Windows.Forms.Panel pnl_body;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_tabs;
-        private System.Windows.Forms.Button btn_prescriptions;
-        private System.Windows.Forms.Button btn_appointment;
-        private System.Windows.Forms.Button btn_patient;
-        private System.Windows.Forms.Button btn_ovrview;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button btn_settings;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button btn_signout;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2ImageButton overviewButton;
+        private Guna.UI2.WinForms.Guna2ImageButton patientButton;
+        private Guna.UI2.WinForms.Guna2ImageButton appointmentButton;
+        private Guna.UI2.WinForms.Guna2ImageButton prescriptionButton;
+        private Guna.UI2.WinForms.Guna2ImageButton settingssButton;
     }
 }
 

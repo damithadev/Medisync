@@ -199,6 +199,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SignInScreen.resx">
       <DependentUpon>SignInScreen.cs</DependentUpon>
@@ -222,6 +223,42 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointmentDefaultImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointmentSetImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutDefaultImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overviewDefaultImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overviewSetImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patientDefaultImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patientSetImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescriptionDefaultImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescriptionSetImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingstSetImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingsDefaultImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingssDefaultImg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

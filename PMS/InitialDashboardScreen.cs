@@ -121,5 +121,30 @@ namespace PMS
         {
             Application.Exit();
         }
+
+        private void overviewButton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new OverviewScreen());
+        }
+
+        private void patientButton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new PatientScreen());
+        }
+
+        private void appointmentButton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new AppointmentScreen());
+        }
+
+        private void Prescriptionbutton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new PerceptionScreen());
+        }
+
+        private void settingsbutton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new SettingsScreen());
+        }
     }
 }

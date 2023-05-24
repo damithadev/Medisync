@@ -118,11 +118,11 @@
             this.Tpatientlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.Tpatientlbl.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tpatientlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
-            this.Tpatientlbl.Location = new System.Drawing.Point(182, 291);
+            this.Tpatientlbl.Location = new System.Drawing.Point(192, 291);
             this.Tpatientlbl.Name = "Tpatientlbl";
-            this.Tpatientlbl.Size = new System.Drawing.Size(114, 62);
+            this.Tpatientlbl.Size = new System.Drawing.Size(85, 62);
             this.Tpatientlbl.TabIndex = 11;
-            this.Tpatientlbl.Text = "150";
+            this.Tpatientlbl.Text = "00";
             // 
             // Tappointmentlbl
             // 
@@ -130,11 +130,11 @@
             this.Tappointmentlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.Tappointmentlbl.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tappointmentlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
-            this.Tappointmentlbl.Location = new System.Drawing.Point(508, 291);
+            this.Tappointmentlbl.Location = new System.Drawing.Point(518, 291);
             this.Tappointmentlbl.Name = "Tappointmentlbl";
-            this.Tappointmentlbl.Size = new System.Drawing.Size(114, 62);
+            this.Tappointmentlbl.Size = new System.Drawing.Size(85, 62);
             this.Tappointmentlbl.TabIndex = 12;
-            this.Tappointmentlbl.Text = "150";
+            this.Tappointmentlbl.Text = "00";
             // 
             // Tprescriptionslbl
             // 
@@ -144,9 +144,9 @@
             this.Tprescriptionslbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
             this.Tprescriptionslbl.Location = new System.Drawing.Point(192, 558);
             this.Tprescriptionslbl.Name = "Tprescriptionslbl";
-            this.Tprescriptionslbl.Size = new System.Drawing.Size(114, 62);
+            this.Tprescriptionslbl.Size = new System.Drawing.Size(85, 62);
             this.Tprescriptionslbl.TabIndex = 13;
-            this.Tprescriptionslbl.Text = "150";
+            this.Tprescriptionslbl.Text = "00";
             // 
             // Trevenuelbl
             // 
@@ -154,11 +154,11 @@
             this.Trevenuelbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.Trevenuelbl.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Trevenuelbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
-            this.Trevenuelbl.Location = new System.Drawing.Point(518, 558);
+            this.Trevenuelbl.Location = new System.Drawing.Point(508, 558);
             this.Trevenuelbl.Name = "Trevenuelbl";
-            this.Trevenuelbl.Size = new System.Drawing.Size(114, 62);
+            this.Trevenuelbl.Size = new System.Drawing.Size(143, 62);
             this.Trevenuelbl.TabIndex = 14;
-            this.Trevenuelbl.Text = "150";
+            this.Trevenuelbl.Text = "0000";
             // 
             // label1
             // 
@@ -166,7 +166,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(190)))));
-            this.label1.Location = new System.Drawing.Point(472, 579);
+            this.label1.Location = new System.Drawing.Point(461, 579);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 37);
             this.label1.TabIndex = 15;
