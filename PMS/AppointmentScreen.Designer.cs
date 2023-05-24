@@ -195,7 +195,8 @@
             this.snotesbox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.snotesbox.Name = "snotesbox";
             this.snotesbox.PasswordChar = '\0';
-            this.snotesbox.PlaceholderText = "";
+            this.snotesbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.snotesbox.PlaceholderText = "*Optional ";
             this.snotesbox.SelectedText = "";
             this.snotesbox.Size = new System.Drawing.Size(340, 97);
             this.snotesbox.TabIndex = 11;

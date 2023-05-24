@@ -192,7 +192,8 @@
             this.dosebox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dosebox.Name = "dosebox";
             this.dosebox.PasswordChar = '\0';
-            this.dosebox.PlaceholderText = "";
+            this.dosebox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.dosebox.PlaceholderText = "mg/ml";
             this.dosebox.SelectedText = "";
             this.dosebox.Size = new System.Drawing.Size(340, 37);
             this.dosebox.TabIndex = 14;
@@ -224,7 +225,8 @@
             this.durationbox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.durationbox.Name = "durationbox";
             this.durationbox.PasswordChar = '\0';
-            this.durationbox.PlaceholderText = "";
+            this.durationbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.durationbox.PlaceholderText = "hours";
             this.durationbox.SelectedText = "";
             this.durationbox.Size = new System.Drawing.Size(340, 37);
             this.durationbox.TabIndex = 16;
@@ -256,7 +258,8 @@
             this.testbox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.testbox.Name = "testbox";
             this.testbox.PasswordChar = '\0';
-            this.testbox.PlaceholderText = "";
+            this.testbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.testbox.PlaceholderText = "*Optional";
             this.testbox.SelectedText = "";
             this.testbox.Size = new System.Drawing.Size(340, 37);
             this.testbox.TabIndex = 18;
