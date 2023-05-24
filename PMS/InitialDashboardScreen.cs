@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,81 +36,52 @@ namespace PMS
             childForm.BringToFront();
             childForm.Show();
         }
-            
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_patients_Click(object sender, EventArgs e)
-        {
-            openChildForm(new OverviewScreen());
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_appontments_Click(object sender, EventArgs e)
-        {
-            openChildForm(new PatientScreen());
-        }
-
+      
         private void pnl_body_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btn_perception_Click(object sender, EventArgs e)
-        {
-            openChildForm(new AppointmentScreen());
-        }
-
-        private void btn_payments_Click(object sender, EventArgs e)
-        {
-            openChildForm(new PerceptionScreen());
-        }
-
-        private void btn_settings_Click(object sender, EventArgs e)
-        {
-            openChildForm(new SettingsScreen());
-        }
 
         private void pnl_tabs_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
+        private void SetDefaultButtonImages()
         {
-           
+            // Set the default images for all buttons
+            overviewButton.Image = Properties.Resources.overviewDefaultImg;
+            patientButton.Image = Properties.Resources.patientDefaultImg;
+            appointmentButton.Image = Properties.Resources.appointmentDefaultImg;
+            prescriptionButton.Image = Properties.Resources.prescriptionDefaultImg;
+            settingssButton.Image = Properties.Resources.settingssDefaultImg;
+
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void SetSelectedButtonImage(Guna2ImageButton button)
         {
-           
+            // Set the selected image for the specified button
+            if (button == overviewButton)
+            {
+                button.Image = Properties.Resources.overviewSetImg;
+            }
+            else if (button == patientButton)
+            {
+                button.Image = Properties.Resources.patientSetImg;
+            }
+            else if (button == appointmentButton)
+            {
+                button.Image = Properties.Resources.appointmentSetImg;
+            }
+            else if (button == prescriptionButton)
+            {
+                button.Image = Properties.Resources.prescriptionSetImg;
+            }
+            else
+            {
+                button.Image = Properties.Resources.settingstSetImg;
+            }
         }
 
         private void frm_main_Load(object sender, EventArgs e)
@@ -125,26 +97,36 @@ namespace PMS
         private void overviewButton_Click(object sender, EventArgs e)
         {
             openChildForm(new OverviewScreen());
+            SetDefaultButtonImages(); // Reset all buttons to default images
+            SetSelectedButtonImage(overviewButton); // Set selected image for the clicked button
         }
 
         private void patientButton_Click(object sender, EventArgs e)
         {
             openChildForm(new PatientScreen());
+            SetDefaultButtonImages(); // Reset all buttons to default images
+            SetSelectedButtonImage(patientButton); // Set selected image for the clicked button
         }
 
         private void appointmentButton_Click(object sender, EventArgs e)
         {
             openChildForm(new AppointmentScreen());
+            SetDefaultButtonImages(); // Reset all buttons to default images
+            SetSelectedButtonImage(appointmentButton); // Set selected image for the clicked button
         }
 
         private void Prescriptionbutton_Click(object sender, EventArgs e)
         {
             openChildForm(new PerceptionScreen());
+            SetDefaultButtonImages(); // Reset all buttons to default images
+            SetSelectedButtonImage(prescriptionButton); // Set selected image for the clicked button
         }
 
         private void settingsbutton_Click(object sender, EventArgs e)
         {
             openChildForm(new SettingsScreen());
+            SetDefaultButtonImages(); // Reset all buttons to default images
+            SetSelectedButtonImage(settingssButton); // Set selected image for the clicked button
         }
     }
 }

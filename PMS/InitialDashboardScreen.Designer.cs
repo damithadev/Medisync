@@ -31,22 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
             this.pnl_sidebar = new System.Windows.Forms.Panel();
             this.pnl_tabs = new System.Windows.Forms.Panel();
-            this.btn_signout = new System.Windows.Forms.Button();
-            this.pnl_logo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnl_top = new System.Windows.Forms.Panel();
-            this.pnl_body = new System.Windows.Forms.Panel();
             this.settingssButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.prescriptionButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.appointmentButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.patientButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.overviewButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.btn_signout = new System.Windows.Forms.Button();
+            this.pnl_logo = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnl_top = new System.Windows.Forms.Panel();
+            this.pnl_body = new System.Windows.Forms.Panel();
             this.pnl_sidebar.SuspendLayout();
             this.pnl_tabs.SuspendLayout();
-            this.pnl_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.pnl_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,70 +77,6 @@
             this.pnl_tabs.Size = new System.Drawing.Size(288, 787);
             this.pnl_tabs.TabIndex = 1;
             this.pnl_tabs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_tabs_Paint);
-            // 
-            // btn_signout
-            // 
-            this.btn_signout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_signout.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_signout.FlatAppearance.BorderSize = 0;
-            this.btn_signout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_signout.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_signout.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_signout.Location = new System.Drawing.Point(0, 714);
-            this.btn_signout.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_signout.Name = "btn_signout";
-            this.btn_signout.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_signout.Size = new System.Drawing.Size(288, 73);
-            this.btn_signout.TabIndex = 11;
-            this.btn_signout.Text = "Sign Out";
-            this.btn_signout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_signout.UseVisualStyleBackColor = true;
-            this.btn_signout.Click += new System.EventHandler(this.btn_signout_Click);
-            // 
-            // pnl_logo
-            // 
-            this.pnl_logo.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.pnl_logo.Controls.Add(this.guna2PictureBox1);
-            this.pnl_logo.Controls.Add(this.label1);
-            this.pnl_logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_logo.Location = new System.Drawing.Point(0, 0);
-            this.pnl_logo.Name = "pnl_logo";
-            this.pnl_logo.Size = new System.Drawing.Size(288, 143);
-            this.pnl_logo.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Patient Management System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // pnl_top
-            // 
-            this.pnl_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(75)))), ((int)(((byte)(253)))));
-            this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_top.Location = new System.Drawing.Point(288, 0);
-            this.pnl_top.Name = "pnl_top";
-            this.pnl_top.Size = new System.Drawing.Size(1334, 38);
-            this.pnl_top.TabIndex = 1;
-            // 
-            // pnl_body
-            // 
-            this.pnl_body.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.pnl_body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_body.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnl_body.Location = new System.Drawing.Point(288, 38);
-            this.pnl_body.Name = "pnl_body";
-            this.pnl_body.Size = new System.Drawing.Size(1334, 892);
-            this.pnl_body.TabIndex = 2;
-            this.pnl_body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_body_Paint);
             // 
             // settingssButton
             // 
@@ -237,6 +173,37 @@
             this.pictureBox8.TabIndex = 12;
             this.pictureBox8.TabStop = false;
             // 
+            // btn_signout
+            // 
+            this.btn_signout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btn_signout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_signout.FlatAppearance.BorderSize = 0;
+            this.btn_signout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_signout.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signout.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_signout.Location = new System.Drawing.Point(0, 714);
+            this.btn_signout.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.btn_signout.Name = "btn_signout";
+            this.btn_signout.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.btn_signout.Size = new System.Drawing.Size(288, 73);
+            this.btn_signout.TabIndex = 11;
+            this.btn_signout.Text = "Sign Out";
+            this.btn_signout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_signout.UseVisualStyleBackColor = true;
+            this.btn_signout.Click += new System.EventHandler(this.btn_signout_Click);
+            // 
+            // pnl_logo
+            // 
+            this.pnl_logo.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.pnl_logo.Controls.Add(this.guna2PictureBox1);
+            this.pnl_logo.Controls.Add(this.label1);
+            this.pnl_logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_logo.Location = new System.Drawing.Point(0, 0);
+            this.pnl_logo.Name = "pnl_logo";
+            this.pnl_logo.Size = new System.Drawing.Size(288, 143);
+            this.pnl_logo.TabIndex = 0;
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
@@ -247,6 +214,38 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(282, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Patient Management System";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnl_top
+            // 
+            this.pnl_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(75)))), ((int)(((byte)(253)))));
+            this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_top.Location = new System.Drawing.Point(288, 0);
+            this.pnl_top.Name = "pnl_top";
+            this.pnl_top.Size = new System.Drawing.Size(1334, 38);
+            this.pnl_top.TabIndex = 1;
+            // 
+            // pnl_body
+            // 
+            this.pnl_body.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.pnl_body.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_body.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnl_body.Location = new System.Drawing.Point(288, 38);
+            this.pnl_body.Name = "pnl_body";
+            this.pnl_body.Size = new System.Drawing.Size(1334, 892);
+            this.pnl_body.TabIndex = 2;
+            this.pnl_body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_body_Paint);
             // 
             // frm_main
             // 
@@ -263,8 +262,8 @@
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.pnl_sidebar.ResumeLayout(false);
             this.pnl_tabs.ResumeLayout(false);
-            this.pnl_logo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.pnl_logo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
