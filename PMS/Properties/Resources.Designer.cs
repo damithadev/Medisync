@@ -83,6 +83,16 @@ namespace PMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoginBtn {
+            get {
+                object obj = ResourceManager.GetObject("LoginBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logoutDefaultImg {
             get {
                 object obj = ResourceManager.GetObject("logoutDefaultImg", resourceCulture);

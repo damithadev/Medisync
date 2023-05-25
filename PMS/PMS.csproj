@@ -260,5 +260,8 @@
   <ItemGroup>
     <None Include="Resources\settingssDefaultImg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\LoginBtn.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

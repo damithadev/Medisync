@@ -26,17 +26,22 @@ namespace PMS
             this.Hide();
         }
 
-        
-        private void button1_Click(object sender, EventArgs e)
+        private void SignInScreen_Load(object sender, EventArgs e)
         {
-            
 
-            string email = textBoxemail.Text;
-            string password = textBoxpassword.Text;
+        }
+
+        public string email;
+        public string password;
+
+        private void loginBtn_click(object sender, EventArgs e)
+        {
+            email = textBoxemail.Text;
+            password = textBoxpassword.Text;
 
             //string connectionString = "server=your_server_name;user id=your_username;password=your_password;database=pms_db;sslmode=none;";
-            
-            if (email !="" && password !="")
+
+            if (email != "" && password != "")
             {
                 dbConnection functions = new dbConnection();
 
@@ -83,14 +88,15 @@ namespace PMS
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            email = "";
+            password = "";
         }
 
-        private void SignInScreen_Load(object sender, EventArgs e)
+        private void closeBtn_click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
