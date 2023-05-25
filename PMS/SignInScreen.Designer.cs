@@ -93,11 +93,12 @@
             this.textBoxpassword.Location = new System.Drawing.Point(777, 423);
             this.textBoxpassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxpassword.Name = "textBoxpassword";
-            this.textBoxpassword.PasswordChar = '\0';
+            this.textBoxpassword.PasswordChar = '●';
             this.textBoxpassword.PlaceholderText = "";
             this.textBoxpassword.SelectedText = "";
             this.textBoxpassword.Size = new System.Drawing.Size(351, 37);
             this.textBoxpassword.TabIndex = 10;
+            this.textBoxpassword.UseSystemPasswordChar = true;
             // 
             // closebtn
             // 

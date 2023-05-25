@@ -128,5 +128,10 @@ namespace PMS
             SetDefaultButtonImages(); // Reset all buttons to default images
             SetSelectedButtonImage(settingssButton); // Set selected image for the clicked button
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
