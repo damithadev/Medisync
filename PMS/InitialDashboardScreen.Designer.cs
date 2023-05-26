@@ -36,12 +36,11 @@
             this.appointmentButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.patientButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.overviewButton = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btn_signout = new System.Windows.Forms.Button();
             this.pnl_logo = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnl_top = new System.Windows.Forms.Panel();
             this.pnl_body = new System.Windows.Forms.Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pnl_sidebar.SuspendLayout();
             this.pnl_tabs.SuspendLayout();
             this.pnl_logo.SuspendLayout();
@@ -62,12 +61,12 @@
             // pnl_tabs
             // 
             this.pnl_tabs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(75)))), ((int)(((byte)(253)))));
+            this.pnl_tabs.Controls.Add(this.guna2ImageButton1);
             this.pnl_tabs.Controls.Add(this.settingssButton);
             this.pnl_tabs.Controls.Add(this.prescriptionButton);
             this.pnl_tabs.Controls.Add(this.appointmentButton);
             this.pnl_tabs.Controls.Add(this.patientButton);
             this.pnl_tabs.Controls.Add(this.overviewButton);
-            this.pnl_tabs.Controls.Add(this.btn_signout);
             this.pnl_tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_tabs.Location = new System.Drawing.Point(0, 143);
             this.pnl_tabs.Name = "pnl_tabs";
@@ -160,31 +159,10 @@
             this.overviewButton.TabIndex = 13;
             this.overviewButton.Click += new System.EventHandler(this.overviewButton_Click);
             // 
-            // btn_signout
-            // 
-            this.btn_signout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_signout.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_signout.FlatAppearance.BorderSize = 0;
-            this.btn_signout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_signout.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_signout.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_signout.Location = new System.Drawing.Point(0, 714);
-            this.btn_signout.Margin = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.btn_signout.Name = "btn_signout";
-            this.btn_signout.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.btn_signout.Size = new System.Drawing.Size(288, 73);
-            this.btn_signout.TabIndex = 11;
-            this.btn_signout.Text = "Sign Out";
-            this.btn_signout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_signout.UseVisualStyleBackColor = true;
-            this.btn_signout.Click += new System.EventHandler(this.btn_signout_Click);
-            // 
             // pnl_logo
             // 
             this.pnl_logo.BackColor = System.Drawing.SystemColors.HighlightText;
             this.pnl_logo.Controls.Add(this.guna2PictureBox1);
-            this.pnl_logo.Controls.Add(this.label1);
             this.pnl_logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_logo.Location = new System.Drawing.Point(0, 0);
             this.pnl_logo.Name = "pnl_logo";
@@ -195,24 +173,12 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(34, 29);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(228, 53);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(288, 143);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 95);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Patient Management System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnl_top
             // 
@@ -233,6 +199,23 @@
             this.pnl_body.Size = new System.Drawing.Size(1334, 892);
             this.pnl_body.TabIndex = 2;
             this.pnl_body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_body_Paint);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ImageButton1.HoverState.Image = global::PMS.Properties.Resources.logoutDefaultImg;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(207, 57);
+            this.guna2ImageButton1.Image = global::PMS.Properties.Resources.logoutDefaultImg;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(207, 57);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(0, 707);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(207, 57);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(288, 80);
+            this.guna2ImageButton1.TabIndex = 18;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // frm_main
             // 
@@ -263,15 +246,14 @@
         private System.Windows.Forms.Panel pnl_logo;
         private System.Windows.Forms.Panel pnl_top;
         private System.Windows.Forms.Panel pnl_body;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_tabs;
-        private System.Windows.Forms.Button btn_signout;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ImageButton overviewButton;
         private Guna.UI2.WinForms.Guna2ImageButton patientButton;
         private Guna.UI2.WinForms.Guna2ImageButton appointmentButton;
         private Guna.UI2.WinForms.Guna2ImageButton prescriptionButton;
         private Guna.UI2.WinForms.Guna2ImageButton settingssButton;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }
 
