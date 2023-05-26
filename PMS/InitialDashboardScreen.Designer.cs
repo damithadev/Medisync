@@ -36,7 +36,6 @@
             this.appointmentButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.patientButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.overviewButton = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btn_signout = new System.Windows.Forms.Button();
             this.pnl_logo = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -45,7 +44,6 @@
             this.pnl_body = new System.Windows.Forms.Panel();
             this.pnl_sidebar.SuspendLayout();
             this.pnl_tabs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.pnl_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +67,6 @@
             this.pnl_tabs.Controls.Add(this.appointmentButton);
             this.pnl_tabs.Controls.Add(this.patientButton);
             this.pnl_tabs.Controls.Add(this.overviewButton);
-            this.pnl_tabs.Controls.Add(this.pictureBox8);
             this.pnl_tabs.Controls.Add(this.btn_signout);
             this.pnl_tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_tabs.Location = new System.Drawing.Point(0, 143);
@@ -163,16 +160,6 @@
             this.overviewButton.TabIndex = 13;
             this.overviewButton.Click += new System.EventHandler(this.overviewButton_Click);
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(21, 733);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(39, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 12;
-            this.pictureBox8.TabStop = false;
-            // 
             // btn_signout
             // 
             this.btn_signout.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -220,13 +207,12 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 94);
+            this.label1.Location = new System.Drawing.Point(0, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 29);
+            this.label1.Size = new System.Drawing.Size(288, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Patient Management System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pnl_top
             // 
@@ -257,13 +243,14 @@
             this.Controls.Add(this.pnl_top);
             this.Controls.Add(this.pnl_sidebar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1640, 977);
+            this.MinimumSize = new System.Drawing.Size(1640, 977);
             this.Name = "frm_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient Management System";
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.pnl_sidebar.ResumeLayout(false);
             this.pnl_tabs.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.pnl_logo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -278,7 +265,6 @@
         private System.Windows.Forms.Panel pnl_body;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_tabs;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button btn_signout;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ImageButton overviewButton;
