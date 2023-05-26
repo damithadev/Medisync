@@ -19,7 +19,30 @@ namespace PMS
             InitializeComponent();
         }
 
-        public void signUpBtn_Click(object sender, EventArgs e)
+        private void Close_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            new SignInScreen().Show();
+            this.Hide();
+        }
+
+        private void SignUpScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        SignInScreen obj = new SignInScreen();
+        private void closebtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            obj.Show();
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             string fname = textBoxfname.Text;
             string lname = textBoxlname.Text;
@@ -101,71 +124,13 @@ namespace PMS
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public int UserTaken(string email)
+        private void cancelBtnClick(object sender, EventArgs e)
         {
-            int result = 0;
-
-
-            string selectQuery = "SELECT COUNT(*) FROM userTable WHERE email = @email";
-
-            dbConnection functions = new dbConnection();
-
-            using (MySqlConnection connection = new MySqlConnection(functions.connectionString))
-            {
-                try
-                {
-                    connection.Open();
-
-                    using (MySqlCommand command = new MySqlCommand(selectQuery, connection))
-                    {
-                        command.Parameters.AddWithValue("@email", email);
-
-                        object queryResult = command.ExecuteScalar();
-                        if (queryResult != null)
-                        {
-                            result = Convert.ToInt32(queryResult);
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
-
-            return result;
-        }
-
-        private void Close_btn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            new SignInScreen().Show();
-            this.Hide();
-        }
-
-        private void SignUpScreen_Load(object sender, EventArgs e)
-        {
-
+            textBoxfname.Text = "";
+            textBoxlname.Text = "";
+            textBoxemail.Text = "";
+            textBoxpassword1.Text = "";
+            textBoxpassword2.Text = "";
         }
     }
 }

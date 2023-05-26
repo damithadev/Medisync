@@ -33,7 +33,6 @@
             this.textBoxemail = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBoxpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.closebtn = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.Loginbtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -116,22 +115,6 @@
             this.closebtn.TabIndex = 13;
             this.closebtn.Click += new System.EventHandler(this.closeBtn_click);
             // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(96, 30);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(96, 30);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(957, 493);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(96, 30);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(156, 69);
-            this.guna2ImageButton1.TabIndex = 12;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
             // Loginbtn
             // 
             this.Loginbtn.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -141,7 +124,7 @@
             this.Loginbtn.ImageOffset = new System.Drawing.Point(0, 0);
             this.Loginbtn.ImageRotate = 0F;
             this.Loginbtn.ImageSize = new System.Drawing.Size(96, 30);
-            this.Loginbtn.Location = new System.Drawing.Point(777, 493);
+            this.Loginbtn.Location = new System.Drawing.Point(870, 490);
             this.Loginbtn.Name = "Loginbtn";
             this.Loginbtn.PressedState.ImageSize = new System.Drawing.Size(96, 30);
             this.Loginbtn.Size = new System.Drawing.Size(143, 69);
@@ -179,7 +162,6 @@
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.closebtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.Loginbtn);
             this.Controls.Add(this.textBoxpassword);
             this.Controls.Add(this.textBoxemail);
@@ -203,7 +185,6 @@
         private Guna.UI2.WinForms.Guna2TextBox textBoxemail;
         private Guna.UI2.WinForms.Guna2TextBox textBoxpassword;
         private Guna.UI2.WinForms.Guna2ImageButton Loginbtn;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton closebtn;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }

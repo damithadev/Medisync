@@ -88,12 +88,6 @@ namespace PMS
             }
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            email = "";
-            password = "";
-        }
-
         private void closeBtn_click(object sender, EventArgs e)
         {
             Application.Exit();
