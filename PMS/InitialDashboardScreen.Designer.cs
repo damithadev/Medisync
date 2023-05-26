@@ -203,6 +203,7 @@
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2ImageButton1.HoverState.Image = global::PMS.Properties.Resources.logoutDefaultImg;
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(207, 57);
