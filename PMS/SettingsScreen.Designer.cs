@@ -158,11 +158,12 @@
             this.password1box.Location = new System.Drawing.Point(301, 456);
             this.password1box.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.password1box.Name = "password1box";
-            this.password1box.PasswordChar = '\0';
+            this.password1box.PasswordChar = '●';
             this.password1box.PlaceholderText = "";
             this.password1box.SelectedText = "";
             this.password1box.Size = new System.Drawing.Size(321, 37);
             this.password1box.TabIndex = 12;
+            this.password1box.UseSystemPasswordChar = true;
             // 
             // guna2PictureBox2
             // 
@@ -242,11 +243,12 @@
             this.password2box.Location = new System.Drawing.Point(301, 535);
             this.password2box.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.password2box.Name = "password2box";
-            this.password2box.PasswordChar = '\0';
+            this.password2box.PasswordChar = '●';
             this.password2box.PlaceholderText = "";
             this.password2box.SelectedText = "";
             this.password2box.Size = new System.Drawing.Size(321, 37);
             this.password2box.TabIndex = 18;
+            this.password2box.UseSystemPasswordChar = true;
             // 
             // SettingsScreen
             // 

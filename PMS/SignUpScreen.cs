@@ -108,19 +108,21 @@ namespace PMS
                     }
                     else
                     {
-                        new PopupMessage("Sorry, This email already have an account!").ShowDialog();
-                        //MessageBox.Show("Sorry, The username is already taken!");
+                        //new PopupMessage("Sorry, This email already have an account!").ShowDialog();
+                        MessageBox.Show("Sorry, The email is already taken!");
                         textBoxemail.Text = "";
                     }
                 }
                 else
                 {
-                    new PopupMessage("Password doesn't match!").ShowDialog();
+                    //new PopupMessage("Password doesn't match!").ShowDialog();
+                    MessageBox.Show("Password doesn't match!");
                 }
             }
             else
             {
-                new PopupMessage("Enter all required information!").ShowDialog();
+                //new PopupMessage("Enter all required information!").ShowDialog();
+                MessageBox.Show("Enter all required information!");
             }
         }
 
@@ -131,6 +133,11 @@ namespace PMS
             textBoxemail.Text = "";
             textBoxpassword1.Text = "";
             textBoxpassword2.Text = "";
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -121,7 +121,7 @@
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQcAAANbCAYAAAD/oSmAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAA/7JJREFUeF7s/Wm4ptdVHgif7rQ1WJbBYAdIkyYJ6e5Ad7pzdX5819Xf9X1feiCW
+        DwAACw8BkvkDpQAA/7JJREFUeF7s/Wm4ptdVHgif7rQ1WJbBYAdIkyYJ6e5Ad7pzdX5819Xf9X1feiCW
         quqc0mAzBILNYM1SDacmybKRjQ3xgHFCyBUISUgAmwaMmW1j8IwhYA1VqirJgzxInq25pJrOsL91r3fd
         +9x7v/t9z5E8yXjd+K6191prr72f532fc3Ru9vM8C08VlFL+q2jWtvqAvg9sljOvlsb6ODHLr9A67piD
         reQQfa72R3OOfMQsHxmuCvWxPSt3hNF4xaxao3Ga2/vYJ2b5oulgTu831P4g1tQexQmNzcsDtlKPQA7J
@@ -12993,7 +12993,7 @@
   <data name="guna2PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAS4AAADmCAYAAABrjGguAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAJh5JREFUeF7tnQmUJUWd7htEQUQBfSog4wKoAzojI6KgeGgRuiojs5rNAllFkFbQ
+        EQAACxEBf2RfkQAAJh5JREFUeF7tnQmUJUWd7htEQUQBfSog4wKoAzojI6KgeGgRuiojs5rNAllFkFbQ
         hrq5VNH63jnlDCC4C6MCPmUTFGSVVZ0ZHDZRZ55Dg4CisqmI3UA3TdPdlREZ7/9FRnYXTQq91HJv5vc7
         53cKqqvqRkZGfhmZGRkxgxBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQggh
         hBBCCCGEEEIIIYQQQgghhBBCCCGEEEJIIxgctC+CcwO7bTJgdy3VR6ShPiaNTCx+HiahuTgOi6uSsLgx
@@ -13162,7 +13162,7 @@
   <data name="guna2ImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQYAAABJCAYAAADfTIgxAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAACH5JREFUeF7tnT+PE0cYxu8j8BH4KJTn9RWuUkN6JAvb0RWJFAlBlzsqItEczUnX
+        EQAACxEBf2RfkQAACH5JREFUeF7tnT+PE0cYxu8j8BH4KJTn9RWuUkN6JAvb0RWJFAlBlzsqItEczUnX
         YUogEoQUkaC4KEkZBEWQoDjcIJC4tZ157J3ceHjf3VnvrndtP4/0E8l5ZnZn5ffZd/7semfV6u5+vjzY
         ja/2o/Mfe+34qB+NTwfR+HW/PR4ZpoRsMaN5LMRPB1H8YBYjrbiDmEnCZ3PUvTK91N89v9Jrnd9JDEC6
         IISQFHomdgxHMIoktNZT1gxMp5gJEFIuI5gEYiwJt+YLJ4tUSOgMIaRszFD8RvTlahJ+zRMNgZD6wFCj
@@ -13204,7 +13204,7 @@
   <data name="guna2ImageButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQYAAABJCAYAAADfTIgxAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAACExJREFUeF7tnT2PE0kQhvcn8BP4KYTr8QaOLobLkSxsnza4k05CkN0uEUgkS4K0
+        EQAACxEBf2RfkQAACExJREFUeF7tnT2PE0kQhvcn8BP4KYTr8QaOLobLkSxsnza4k05CkN0uEUgkS4K0
         GSYEToK7C5Ag2BOkIAgOiQ3ACQKJnQ/6HU8f46ZqvrZnbY/fkh4hcLuYGU29U1XdPd46axtufzk/2Q4v
         joOT30f98GAcREeTIHoz7kczQ0LIBjObx0L4eBKE99IY6YUDxEwWPt2x4YXk3Hj75MKod3IjEwDpghBC
         ChiZ2DEcQCiy0FpPs2JgToqZACF+mUEkEGNZuK2+4WCRCgknQwjxjSnFrwRfL2bht3pGQSBkeaDUWKkM

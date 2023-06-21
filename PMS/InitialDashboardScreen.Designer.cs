@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
             this.pnl_sidebar = new System.Windows.Forms.Panel();
             this.pnl_tabs = new System.Windows.Forms.Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.settingssButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.prescriptionButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.appointmentButton = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -40,7 +41,6 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnl_top = new System.Windows.Forms.Panel();
             this.pnl_body = new System.Windows.Forms.Panel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pnl_sidebar.SuspendLayout();
             this.pnl_tabs.SuspendLayout();
             this.pnl_logo.SuspendLayout();
@@ -74,9 +74,28 @@
             this.pnl_tabs.TabIndex = 1;
             this.pnl_tabs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_tabs_Paint);
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ImageButton1.HoverState.Image = global::PMS.Properties.Resources.logoutDefaultImg;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(207, 57);
+            this.guna2ImageButton1.Image = global::PMS.Properties.Resources.logoutDefaultImg;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(207, 57);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(0, 707);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(207, 57);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(288, 80);
+            this.guna2ImageButton1.TabIndex = 18;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
             // settingssButton
             // 
             this.settingssButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.settingssButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingssButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.settingssButton.HoverState.Image = global::PMS.Properties.Resources.settingstSetImg;
             this.settingssButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
@@ -94,6 +113,7 @@
             // prescriptionButton
             // 
             this.prescriptionButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.prescriptionButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.prescriptionButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.prescriptionButton.HoverState.Image = global::PMS.Properties.Resources.prescriptionSetImg;
             this.prescriptionButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
@@ -111,6 +131,7 @@
             // appointmentButton
             // 
             this.appointmentButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.appointmentButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.appointmentButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.appointmentButton.HoverState.Image = global::PMS.Properties.Resources.appointmentSetImg;
             this.appointmentButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
@@ -128,6 +149,7 @@
             // patientButton
             // 
             this.patientButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.patientButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.patientButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.patientButton.HoverState.Image = global::PMS.Properties.Resources.patientSetImg;
             this.patientButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
@@ -145,6 +167,7 @@
             // overviewButton
             // 
             this.overviewButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.overviewButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.overviewButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.overviewButton.HoverState.Image = global::PMS.Properties.Resources.overviewSetImg;
             this.overviewButton.HoverState.ImageSize = new System.Drawing.Size(207, 57);
@@ -199,24 +222,6 @@
             this.pnl_body.Size = new System.Drawing.Size(1334, 892);
             this.pnl_body.TabIndex = 2;
             this.pnl_body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_body_Paint);
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2ImageButton1.HoverState.Image = global::PMS.Properties.Resources.logoutDefaultImg;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(207, 57);
-            this.guna2ImageButton1.Image = global::PMS.Properties.Resources.logoutDefaultImg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(207, 57);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(0, 707);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(207, 57);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(288, 80);
-            this.guna2ImageButton1.TabIndex = 18;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // frm_main
             // 
