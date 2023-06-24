@@ -66,7 +66,7 @@ namespace PMS
                             // get total patient count***********************
                             command.CommandText = "SELECT COUNT(*) FROM patientTable";
                             int rowCount1 = Convert.ToInt32(command.ExecuteScalar());
-                            Tpatientlbl.Text = "0" + rowCount1.ToString();
+                            Tpatientlbl.Text = rowCount1.ToString();
 
 
 
@@ -74,7 +74,7 @@ namespace PMS
                            
                             command.CommandText = "SELECT COUNT(*) FROM appointmentTable";
                             int rowCount2 = Convert.ToInt32(command.ExecuteScalar());
-                            Tappointmentlbl.Text = "0" + rowCount2.ToString();
+                            Tappointmentlbl.Text = rowCount2.ToString();
 
 
 
@@ -82,7 +82,7 @@ namespace PMS
 
                             command.CommandText = "SELECT COUNT(*) FROM prescriptionTable";
                             int rowCount3 = Convert.ToInt32(command.ExecuteScalar());
-                            Tprescriptionslbl.Text = "0" + rowCount3.ToString();
+                            Tprescriptionslbl.Text = rowCount3.ToString();
 
 
 

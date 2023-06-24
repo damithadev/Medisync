@@ -11,9 +11,9 @@ namespace PMS
 {
     internal class dbConnection
     {
-        public string connectionString = "server=139.59.62.182;port=3306;userid=damitha99;password=20020502;database=pms_db;sslmode=none;";
+        //public string connectionString = "server=139.59.62.182;port=3306;userid=damitha99;password=20020502;database=pms_db;sslmode=none;";
 
-
+        public string connectionString = "server=198.37.120.210;port=3306;userid=damithad_damitha99;password=Imdj2002;database=damithad_pms_db;sslmode=none;";
 
         public int UserTaken(string email)
         {
