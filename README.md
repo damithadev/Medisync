@@ -5,5 +5,4 @@ Medisync is a patient management system that allows medical centers to easily ma
 <br> <br><br> <br>
 ![Sign In Screen (2)](https://github.com/damithadev/Medisync/assets/104585591/da5483eb-6b35-460a-a504-c165a306ceee)
 
-Signup
-![Signup Screen (1)](https://github.com/damithadev/Medisync/assets/104585591/4648a59d-8038-42bd-9c64-985e1021a883)
+
