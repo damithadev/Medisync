@@ -37,5 +37,20 @@ using manual processes, medical facilities may now handle patient data in a more
 <h3>Settins Tab</h3>
 
 ![Settings Dashboard Screen](https://github.com/damithadev/Medisync/assets/104585591/bb93278f-728c-400c-94ab-841c73c26414)
+<br> <br><br>
+<h2>Brand Guide</h2>
 
+![Desktop](https://github.com/damithadev/Medisync/assets/104585591/622b3683-812f-45a6-af8e-cac64a31aa19)
+<br> <br><br>
+<h2>ER Diagram</h2>
+
+![image](https://github.com/damithadev/Medisync/assets/104585591/6489241b-1278-4175-9298-c9b651d33502)
+<br> <br><br>
+<h2>Class Diagram</h2>
+
+![image](https://github.com/damithadev/Medisync/assets/104585591/e304de62-3120-431d-9a13-2bea6af16a3c)
+<br> <br><br>
+<h2>Usecase Diagram</h2>
+
+![image](https://github.com/damithadev/Medisync/assets/104585591/eb924951-04d8-4d4f-91ab-eb67972e92be)
 
