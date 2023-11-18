@@ -4,7 +4,9 @@
 Medisync is a patient management system that allows medical centers to easily manage their patients. We are developing this as a Desktop Application using C# .NET Framework (Windows Form) for a university project under OOP in C# Module. To create an intuitive user interface, we utilized the Guna UI 2 Framework. The database was created using MySQL on a Digital Ocean server. <br> <br>
 Medisync aids medical facilities in enhancing the effectiveness, accuracy, and security of patient data. In addition to enabling medical institutions to automate patient-related 
 processes like adding patients to the system, making appointments, and writing prescriptions, the system has an intuitive interface that makes it simple for receptionists. Under the prescription page, Medisync also has a billing feature that enables customers to easily produce a bill, view total income, and access other necessary data. With the help of this simple solution, receptionists are given control over patient data management in a 
-digital setting. Medisync is a useful tool for medical facilities wishing to increase the effectiveness, accuracy, and security of patient data. With Medisync, patient management is moving into the future. Rather than 
+digital setting. Medisync is a useful tool for medical facilities wishing to increase the effectiveness, accuracy, and security of patient data.
+<br>
+With Medisync, patient management is moving into the future. Rather than 
 using manual processes, medical facilities may now handle patient data in a more efficient, contemporary manner, thereby improving the level of care patients receive.
 <br> <br>
 <h2>UI Design</h2>
