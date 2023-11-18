@@ -2,13 +2,15 @@
 <h1 align="center"> Medisync </h1>
 <p align="center"><i> A Patient-Management-System </i></p>
 
-![image](https://github.com/damithadev/Medisync/assets/104585591/72524aef-a591-440b-a369-9feb4e9f60d3)
-
 
 ## Table of Contents
 <ol>
     <li><a href="#overview">Overview Of The Project</a></li>
     <li><a href="#ui">User Interface Design</a></li>
+    <li><a href="#brand">Brand Guide</a></li>
+    <li><a href="#er">ER Diagram</a></li>
+    <li><a href="#class">Class Diagram</a></li>
+    <li><a href="#usecase">Usecase Diagram</a></li>
  </ol>
 
 <br/>
@@ -56,19 +58,23 @@ using manual processes, medical facilities may now handle patient data in a more
 
 ![Settings Dashboard Screen](https://github.com/damithadev/Medisync/assets/104585591/bb93278f-728c-400c-94ab-841c73c26414)
 <br> <br><br>
-<h2>Brand Guide</h2>
+<a name="brand"></a>
+## :round_pushpin: Brande Guide
 
 ![Desktop](https://github.com/damithadev/Medisync/assets/104585591/622b3683-812f-45a6-af8e-cac64a31aa19)
 <br> <br><br>
-<h2>ER Diagram</h2>
+<a name="er"></a>
+## :round_pushpin: ER Diagram
 
 ![image](https://github.com/damithadev/Medisync/assets/104585591/6489241b-1278-4175-9298-c9b651d33502)
 <br> <br><br>
-<h2>Class Diagram</h2>
+<a name="class"></a>
+## :round_pushpin: Class Diagram
 
 ![image](https://github.com/damithadev/Medisync/assets/104585591/e304de62-3120-431d-9a13-2bea6af16a3c)
 <br> <br><br>
-<h2>Usecase Diagram</h2>
+<a name="usecase"></a>
+## :round_pushpin: Usecase Diagram
 
 ![image](https://github.com/damithadev/Medisync/assets/104585591/eb924951-04d8-4d4f-91ab-eb67972e92be)
 
