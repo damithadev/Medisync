@@ -59,24 +59,28 @@ using manual processes, medical facilities may now handle patient data in a more
 ![Settings Dashboard Screen](https://github.com/damithadev/Medisync/assets/104585591/bb93278f-728c-400c-94ab-841c73c26414)
 <p align="right"><a href="#top">[Back to Top:arrow_up:]</a></p>
 <br> <br><br>
+
 <a name="brand"></a>
 ## :round_pushpin: Brande Guide
 
 ![Desktop](https://github.com/damithadev/Medisync/assets/104585591/622b3683-812f-45a6-af8e-cac64a31aa19)
 <p align="right"><a href="#top">[Back to Top:arrow_up:]</a></p>
 <br> <br><br>
+
 <a name="er"></a>
 ## :round_pushpin: ER Diagram
 
 ![image](https://github.com/damithadev/Medisync/assets/104585591/6489241b-1278-4175-9298-c9b651d33502)
 <p align="right"><a href="#top">[Back to Top:arrow_up:]</a></p>
 <br> <br><br>
+
 <a name="class"></a>
 ## :round_pushpin: Class Diagram
 
 ![image](https://github.com/damithadev/Medisync/assets/104585591/e304de62-3120-431d-9a13-2bea6af16a3c)
 <p align="right"><a href="#top">[Back to Top:arrow_up:]</a></p>
 <br> <br><br>
+
 <a name="usecase"></a>
 ## :round_pushpin: Usecase Diagram
 
