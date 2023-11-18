@@ -2,6 +2,8 @@
 <h1 align="center"> Medisync </h1>
 <p align="center"><i> A Patient-Management-System </i></p>
 
+![image](https://github.com/damithadev/Medisync/assets/104585591/72524aef-a591-440b-a369-9feb4e9f60d3)
+
 
 ## Table of Contents
 <ol>
