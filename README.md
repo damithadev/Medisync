@@ -33,3 +33,7 @@ using manual processes, medical facilities may now handle patient data in a more
 ![Presiptions Dashboard Screen](https://github.com/damithadev/Medisync/assets/104585591/3ddd1687-8f66-42b8-8325-49b92807fd2c)
 <br> <br>
 <h3>Settins Tab</h3>
+
+![Settings Dashboard Screen](https://github.com/damithadev/Medisync/assets/104585591/bb93278f-728c-400c-94ab-841c73c26414)
+
+
