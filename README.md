@@ -1,15 +1,31 @@
-# Medisync (A Patient-Management-System )
+<div id="top"></div>
+<h1 align="center"> Medisync </h1>
+<p align="center"><i> A Patient-Management-System </i></p>
 
 
-Medisync is a patient management system that allows medical centers to easily manage their patients. We are developing this as a Desktop Application using C# .NET Framework (Windows Form) for a university project under OOP in C# Module. To create an intuitive user interface, we utilized the Guna UI 2 Framework. The database was created using MySQL on a Digital Ocean server. <br> <br>
+## Table of Contents
+<ol>
+    <li><a href="#overview">Overview Of The Project</a></li>
+    <li><a href="#ui">User Interface Design</a></li>
+ </ol>
+
+<br/>
+
+<a name="overview"></a>
+## :round_pushpin: Overview Of The Project
+&ensp; *Medisync is a patient management system that allows medical centers to easily manage their patients. We are developing this as a Desktop Application using C# .NET Framework (Windows Form) for a university project under OOP in C# Module. To create an intuitive user interface, we utilized the Guna UI 2 Framework. The database was created using MySQL on a Digital Ocean server. <br> <br>
 Medisync aids medical facilities in enhancing the effectiveness, accuracy, and security of patient data. In addition to enabling medical institutions to automate patient-related 
 processes like adding patients to the system, making appointments, and writing prescriptions, the system has an intuitive interface that makes it simple for receptionists. Under the prescription page, Medisync also has a billing feature that enables customers to easily produce a bill, view total income, and access other necessary data. With the help of this simple solution, receptionists are given control over patient data management in a 
 digital setting. Medisync is a useful tool for medical facilities wishing to increase the effectiveness, accuracy, and security of patient data.
 <br>
 With Medisync, patient management is moving into the future. Rather than 
-using manual processes, medical facilities may now handle patient data in a more efficient, contemporary manner, thereby improving the level of care patients receive.
-<br> <br>
-<h2>UI Design</h2>
+using manual processes, medical facilities may now handle patient data in a more efficient, contemporary manner, thereby improving the level of care patients receive.*<br/>
+
+&ensp;&ensp;&ensp;:point_right: Link to the Repository: <a href="https://github.com/damithadev/Medisync"> ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)<a/>
+<p align="right"><a href="#top">[Back to Top:arrow_up:]</a></p>
+
+<a name="ui"></a>
+## :round_pushpin: User Interface Design
 <h3>Signin Form</h3>
 
 ![Sign In Screen (2)](https://github.com/damithadev/Medisync/assets/104585591/da5483eb-6b35-460a-a504-c165a306ceee)
