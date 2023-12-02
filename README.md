@@ -27,6 +27,7 @@ using manual processes, medical facilities may now handle patient data in a more
 
 &ensp;&ensp;&ensp;:point_right: Link to Video Demo: <a href="https://youtu.be/mds5OAEtx-I">![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)</a><br/>
 &ensp;&ensp;&ensp;:point_right: Link to the Repository: <a href="https://github.com/damithadev/Medisync"> ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)<a/>
+
 <p align="right"><a href="#top">[Back to Top:arrow_up:]</a></p>
 
 <a name="ui"></a>
